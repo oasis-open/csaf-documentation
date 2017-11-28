@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cvrfdoc xmlns:cvrf="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf">
+  <DocumentTitle>DocumentTitle0</DocumentTitle>
+  <DocumentType>DocumentType0</DocumentType>
+  <DocumentPublisher Type="Vendor">
+  </DocumentPublisher>
+  <DocumentTracking>
+    <Identification>
+      <ID>ID0</ID>
+    </Identification>
+    <Status>Draft</Status>
+    <Version>1</Version>
+    <RevisionHistory>
+      <Revision>
+        <Number>1.0</Number>
+        <Date>2038-05-04T18:13:51.0</Date>
+        <Description>Something wrong with some product</Description>
+      </Revision>
+      <Revision>
+        <Number>1.1</Number>
+        <Date>2038-05-04T18:13:52.0</Date>
+        <Description>We excluded some products, but still in the fog</Description>
+      </Revision>
+    </RevisionHistory>
+    <InitialReleaseDate>2038-05-04T18:13:51.0</InitialReleaseDate>
+    <CurrentReleaseDate>2038-05-04T18:13:52.0</CurrentReleaseDate>
+  </DocumentTracking>
+</cvrfdoc>
