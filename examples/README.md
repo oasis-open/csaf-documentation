@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CVRF 1.2 Examples
 The following are examples of CVRF advisories in XML format in accordance to the CVRF version 1.2 specification: http://docs.oasis-open.org/csaf/csaf-cvrf/v1.2/cs01/csaf-cvrf-v1.2-cs01.html
 
@@ -571,6 +572,8 @@ All of these examples can be downloaded as individual files at:
 
 
 =======
+=======
+>>>>>>> 4870c424f6201dad6589c2968dc944aaa993fff5
 # CVRF 1.2 Examples
 The following are examples of CVRF advisories in XML format in accordance to the CVRF version 1.2 specification: http://docs.oasis-open.org/csaf/csaf-cvrf/v1.2/cs01/csaf-cvrf-v1.2-cs01.html
 
@@ -1137,4 +1140,7 @@ All of these examples can be downloaded as individual files at:
 * https://github.com/oasis-open/csaf-documentation/blob/master/examples/cvrf_example_c.xml
 * https://github.com/oasis-open/csaf-documentation/blob/master/examples/cvrf_example_d.xml
 * https://github.com/oasis-open/csaf-documentation/blob/master/examples/cvrf_example_e.xml
+<<<<<<< HEAD
+>>>>>>> 4870c424f6201dad6589c2968dc944aaa993fff5
+=======
 >>>>>>> 4870c424f6201dad6589c2968dc944aaa993fff5
