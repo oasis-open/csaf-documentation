@@ -7,3 +7,4 @@ The following is a list of well-known CVRF content repositories in alphabetical 
 * MITRE - https://cve.mitre.org/data/downloads/index.html
 * Oracle - http://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/1932662.xml
 * RedHat - https://www.redhat.com/security/data/cvrf/
+* Suse - ftp://ftp.suse.com/pub/projects/security/cvrf/
