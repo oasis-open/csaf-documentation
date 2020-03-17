@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # CVRF 1.2 Examples
 The following are examples of CVRF advisories in XML format in accordance to the CVRF version 1.2 specification: http://docs.oasis-open.org/csaf/csaf-cvrf/v1.2/cs01/csaf-cvrf-v1.2-cs01.html
 
