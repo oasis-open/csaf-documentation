@@ -696,8 +696,19 @@ a {
   border-radius: 100vw;
   padding: 0.75rem 1.5rem;
 }
-.cid-sRAtISOGzm .navbar-dropdown {
-  position: relative !important;
+.cid-sRAtISOGzm {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+@media (min-width: 992px) {
+  .cid-sRAtISOGzm {
+    min-height: 105px;
+  }
+}
+.cid-sRAtISOGzm nav.navbar {
+  position: fixed;
 }
 .cid-sRAtISOGzm .container {
   max-width: 1312px;
@@ -1085,6 +1096,7 @@ a {
 }
 .cid-sRAtISOGzm .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-sRAtISOGzm a.nav-link {
   display: flex;
@@ -1439,8 +1451,19 @@ a {
 .cid-sRAtK8mSnJ .mbr-text {
   color: #002549;
 }
-.cid-sRAtISOGzm .navbar-dropdown {
-  position: relative !important;
+.cid-sRAtISOGzm {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+@media (min-width: 992px) {
+  .cid-sRAtISOGzm {
+    min-height: 105px;
+  }
+}
+.cid-sRAtISOGzm nav.navbar {
+  position: fixed;
 }
 .cid-sRAtISOGzm .container {
   max-width: 1312px;
@@ -1828,6 +1851,7 @@ a {
 }
 .cid-sRAtISOGzm .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-sRAtISOGzm a.nav-link {
   display: flex;
@@ -2120,8 +2144,19 @@ a {
 .cid-sRAtK8mSnJ .mbr-text {
   color: #002549;
 }
-.cid-sRAtISOGzm .navbar-dropdown {
-  position: relative !important;
+.cid-sRAtISOGzm {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+@media (min-width: 992px) {
+  .cid-sRAtISOGzm {
+    min-height: 105px;
+  }
+}
+.cid-sRAtISOGzm nav.navbar {
+  position: fixed;
 }
 .cid-sRAtISOGzm .container {
   max-width: 1312px;
@@ -2509,6 +2544,7 @@ a {
 }
 .cid-sRAtISOGzm .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-sRAtISOGzm a.nav-link {
   display: flex;
@@ -2656,8 +2692,19 @@ a {
 .cid-sRAtK8mSnJ .mbr-text {
   color: #002549;
 }
-.cid-sRAtISOGzm .navbar-dropdown {
-  position: relative !important;
+.cid-sRAtISOGzm {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+@media (min-width: 992px) {
+  .cid-sRAtISOGzm {
+    min-height: 105px;
+  }
+}
+.cid-sRAtISOGzm nav.navbar {
+  position: fixed;
 }
 .cid-sRAtISOGzm .container {
   max-width: 1312px;
@@ -3045,6 +3092,7 @@ a {
 }
 .cid-sRAtISOGzm .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-sRAtISOGzm a.nav-link {
   display: flex;
