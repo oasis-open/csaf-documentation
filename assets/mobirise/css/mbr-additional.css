@@ -2607,6 +2607,19 @@ a {
     min-height: 105px;
   }
 }
+.cid-tpb2uVJW9M {
+  background: #000000;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.cid-tpb2uVJW9M .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-tpb2uVJW9M .video-block {
+    width: 100% !important;
+  }
+}
 .cid-toxwnBYYqg {
   background: #000000;
   padding-top: 30px;
