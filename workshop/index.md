@@ -1,6 +1,6 @@
 # The CSAFversum or the Language of Security Information
 
-## Exclusive workshops and Ask-the-Expert sessions around the topic of Common Security Advisory Framework (CSAF)
+## Common Security Advisory Framework (CSAF) Exclusive Workshops and Ask-the-Expert Sessions 
 
 - 12-15 December, 2023
 - Location: Germany (TBA)
