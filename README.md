@@ -55,7 +55,7 @@
 
 <p><ul>
 <li><a href="https://www.oasis-open.org/resources/open-repositories/">TC Open Repositories: Overview and Resources</a></li>
-<li><a href="https://www.oasis-open.org/resources/open-repositories/faq">Frequently Asked Questions</a></li>
+<li><a href="https://www.oasis-open.org/faq-tc-repo/">Frequently Asked Questions</a></li>
 <li><a href="https://www.oasis-open.org/resources/open-repositories/licenses">Open Source Licenses</a></li>
 <li><a href="https://www.oasis-open.org/resources/open-repositories/cla">Contributor License Agreements (CLAs)</a></li>
 <li><a href="https://www.oasis-open.org/resources/open-repositories/maintainers-guide">Maintainers' Guidelines and Agreement</a></li>
