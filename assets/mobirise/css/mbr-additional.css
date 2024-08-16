@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap);
+
+
+
+
+
 body {
   font-family: 'Darker Grotesque', sans-serif;
 }
@@ -2560,6 +2566,19 @@ a {
 @media screen and (-ms-high-contrast: active) and (min-width: 992px), (-ms-high-contrast: none) and (min-width: 992px) {
   .cid-sRAtISOGzm .navbar {
     min-height: 105px;
+  }
+}
+.cid-ulAjl6PeDM {
+  background: #000000;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.cid-ulAjl6PeDM .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-ulAjl6PeDM .video-block {
+    width: 100% !important;
   }
 }
 .cid-tpb2uVJW9M {
