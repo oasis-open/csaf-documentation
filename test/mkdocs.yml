@@ -7,6 +7,7 @@ nav:
   - FAQ: https://github.com/oasis-tcs/csaf/blob/master/csaf_2.0/guidance/faq.md
   - Presentations: https://oasis-open.github.io/csaf-documentation/presentations.html
   - BSI CSAF Lister: https://wid.cert-bund.de/.well-known/csaf-aggregator/aggregator.json
+  - Events: https://oasis-open.github.io/csaf-documentation/workshop/
 site_description: Documentation for the Cyber Security Assessment Framework (CSAF)
 
 theme: readthedocs
