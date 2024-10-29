@@ -1,0 +1,12 @@
+site_name: CSAF Documentation
+nav:
+  - Home: index.md
+  - Schemas: https://docs.oasis-open.org/csaf/csaf/v2.0/os/schemas/
+  - Specification: https://oasis-open.github.io/csaf-documentation/specification.html
+  - GitHub: https://github.com/oasis-tcs/csaf
+  - FAQ: https://github.com/oasis-tcs/csaf/blob/master/csaf_2.0/guidance/faq.md
+  - Presentations: https://oasis-open.github.io/csaf-documentation/presentations.html
+  - BSI CSAF Lister: https://wid.cert-bund.de/.well-known/csaf-aggregator/aggregator.json
+site_description: Documentation for the Cyber Security Assessment Framework (CSAF)
+
+theme: readthedocs
