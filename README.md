@@ -44,9 +44,10 @@
 
 <ul>
 
-<li><a href="mailto:stefan@hagen.link">Stefan Hagen</a>; GitHub ID: <a href="https://github.com/sdrees">sdrees</a>; WWW: <a href="http://hagen.link/">Individual</a></li>
-<li><a href="mailto:vdanen@redhat.com">Vincent Danen</a>; GitHub ID: <a href="https://github.com/vdanen">vdanen</a>; WWW: <a href="https://www.redhat.com/">Red Hat</a></li>
+<li><a href="mailto:stefan@hagen.link">Stefan Hagen</a>; GitHub ID: <a href="https://github.com/sthagen">sthagen</a>; WWW: <a href="http://hagen.link/">Individual</a></li>
+<li>Justin Murphy; GitHub ID: <a href="https://github.com/justmurphy">justmurphy</a>; WWW: <a href="https://www.cisa.gov/">CISA</a></li>
 <li><a href="mailto:os@cisco.com">Omar Santos</a>; GitHub ID: <a href="https://github.com/santosomar">santosomar</a>; WWW: <a href="http://www.cisco.com/">Cisco</a></li>
+<li>Thomas Schmidt; GitHub ID: <a href="https://github.com/tschmidtb51">tschmidtb51</a>; WWW: <a href="https://www.bsi.bund.de/">German Federal Office for Information Security</a></li>
 
 </ul>
 </div>
