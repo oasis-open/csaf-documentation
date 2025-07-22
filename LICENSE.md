@@ -6,7 +6,7 @@ In general files are
 
 > Copyright (c) 2025, OASIS Open
 
-under the [BSD-3-Clause](LICENSES/BSD-3-Clause) license.
+under the [BSD-3-Clause](LICENSES/BSD-3-Clause.txt) license.
 
 With the exception of files that have been marked
 is marked according to https://reuse.software/spec-3.2/
@@ -222,5 +222,5 @@ form the Hugo website and was adapted to suit this project requirements.
 
 ## General License Notice
 
-- See the specific source files for details, the license text itself
-  can be found in the directory `LICENSES/`.
+- See the specific source files for details, the license texts itself
+  can be found in the directory [LICENSES/](LICENSES/)`.
