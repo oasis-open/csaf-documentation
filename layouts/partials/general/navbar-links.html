@@ -1,0 +1,17 @@
+<ul class="navbar-nav">
+  {{ range .Site.Data.navlinksInternal }}
+    {{ partial "general/navbar-link.html" (dict "link" . "page" $.Page) }}
+  {{ end }}
+  <li class="navbar-nav__separator"></li>
+  {{ range .Site.Data.navlinksExternal }}
+    {{ partial "general/navbar-link.html" (dict "link" .) }}
+  {{ end }}
+  <li>
+    <a href="https://github.com/oasis-tcs/csaf" class="nav-item__link navbar__gh-container w-100" rel="noopener noreferrer">
+      <span class="navbar__gh-icon d-none d-lg-block">
+        {{ partial "general/icon.html" (dict "name" "github.svg" "class" "navbar__gh-icon") }}
+      </span>
+      <span class="nav-link d-block d-lg-none pb-3">Github</span>
+    </a>
+  </li>
+</ul>

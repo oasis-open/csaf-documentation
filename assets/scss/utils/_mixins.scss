@@ -1,0 +1,15 @@
+@mixin underline($underline-color: $secondary, $animated: false) {
+  --underline-color: #{$underline-color};
+  background-image: linear-gradient(to right, var(--underline-color) 100%, var(--underline-color) 100%);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition: $transition-slow;
+
+  @if $animated {
+    &:hover,
+    &:active {
+      background-size: 100% 1px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{{ define "main" }}
+<main class="index pb-4">
+  <!-- #region: OASIS Header -->
+  <div class="index__header text-center">
+    <div class="container py-md-6">
+      <p class="h4 fw-bold text-uppercase text-white">OASIS</p>
+      <h1 class="text-white">Common Security Advisory Framework (CSAF)</h1>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region: Index Links Cards -->
+  <section class="py-5">
+    <div class="index__container container">
+      <div class="row g-4 flex-column flex-sm-row">
+        {{ range .Site.Data.index_links }}
+          <div class="col-12 col-md-6 col-lg-3">
+            {{ partial "pages/index/index-card.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region: Why CSAF? -->
+  <section id="why-csaf" class="mb-4 mb-md-5 pt-5">
+    <div class="index__container container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md text-wrapper">
+          <h2 class="text-primary mb-3">Why CSAF?</h2>
+          <p class="mb-4 fs-6 fw-normal">
+            Common Security Advisory Framework (CSAF) is a language to exchange Security Advisories. It plays a crucial role in the cybersecurity arena since it allows stakeholders to automate the creation and consumption of security vulnerability information and remediation.
+          </p>
+          <a href="/#header3" class="btn btn-primary btn-sm-100 lh-1 pb-3 pt-2 px-4 fw-medium rounded-5">Learn more</a>
+        </div>
+        <div class="col-12 col-md-6 mw-100 w-auto image-wrapper">
+          <img class="d-block h-auto w-100" src="/index/code-960x640.jpg" alt="CSAF">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region: Subheader -->
+  <section id="header3" class="blue-gradient fs-2 mb-5 py-10">
+    <h2 class="index__container container display-2 fw-normal lh-1 text-center">
+      Automate security vulnerability assessment and remediation with CSAF and VEX.
+    </h2>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region: YouTube Video -->
+  <section class="index__container container mb-2">
+    <div class="ratio-16x9">
+      {{ partial "general/youtube.html" "vQ_xY3lmZOc" }}
+    </div>
+  </section>
+  <!-- #endregion -->
+</main>
+{{ end }}

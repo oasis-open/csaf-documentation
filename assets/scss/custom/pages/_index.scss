@@ -1,0 +1,140 @@
+.index {
+  &__container {
+    @include media-breakpoint-up(xxl) {
+      max-width: 1112px;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    padding: 4rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                url(../index/chip-1280x839.jpg) center/cover no-repeat;
+    display: block;
+  }
+
+  .shortcode-youtube {
+    margin: auto;
+  }
+}
+
+.index-card {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 191px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: $transition-fast;
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  font-weight: 570;
+  white-space: nowrap;
+
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+  border-radius: 10px;
+  padding-block: 35px 15px;
+  padding-inline: 15px;
+  display: flex;
+
+  background-color: white;
+  border-bottom: 2px solid $accent;
+
+  @include media-breakpoint-up(xl) {
+    letter-spacing: 0.5px;
+    padding-inline: 12px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    line-height: 76px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    min-height: 178px;
+  }
+
+  &__icon {
+    $size: 55px;
+
+    @include media-breakpoint-down(sm) {
+      $size: 45px;
+      margin-bottom: 10px;
+    }
+
+    display: block;
+    width: $size;
+    height: $size;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    color: $accent;
+    line-height: 1;
+  }
+
+  &__label {
+    color: var(--bs-gray-700);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.15;
+    font-weight: bold;
+
+    @extend .hidden-underline--secondary;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    .index-card__label {
+      color: $primary;
+      background-size: 100% 1px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+#why-csaf {
+  margin: 0 auto 3rem auto;
+
+  .row {
+    gap: 20px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: map-get($spacers, 5);
+    }
+  }
+
+  .text-wrapper {
+    p {
+      line-height: 1.15;
+    }
+  }
+
+  .image-wrapper {
+    @include media-breakpoint-down(md) {
+      order: -1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .text-wrapper,
+    .image-wrapper {
+      flex: 1;
+    }
+  }
+}

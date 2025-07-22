@@ -1,0 +1,29 @@
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+
+.tlp {
+  background-color: #000;
+  padding: 0.15rem 0.35rem;
+  margin: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: "Open Sans", OpenSans, sans-serif;
+  max-width: fit-content;
+  font-size: 14px;
+
+  &-red {
+    color: #FF2B2B;
+  }
+
+  &-amber {
+    color: #FFC000;
+  }
+
+  &-green {
+    color: #33FF00;
+  }
+
+  &-clear {
+    color: #FFFFFF;
+  }
+}

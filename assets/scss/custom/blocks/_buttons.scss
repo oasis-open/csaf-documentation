@@ -1,0 +1,37 @@
+.btn {
+  transition: $transition-fast;
+}
+
+.btn-outline-primary {
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible,
+  &:target {
+    background-color: lighten($primary, 66.5%) !important;
+    color: $secondary !important;
+    background: none;
+  }
+}
+
+.btn-sm-100 {
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.md-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

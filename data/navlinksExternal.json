@@ -1,0 +1,17 @@
+[
+    {
+        "label": "Lister",
+        "url": "https://wid.cert-bund.de/.well-known/csaf-aggregator/aggregator.json",
+        "external": true
+    },
+    {
+        "label": "Schemas",
+        "url": "https://docs.oasis-open.org/csaf/csaf/v2.0/errata01/os/schemas/",
+        "external": true
+    },
+    {
+        "label": "FAQ",
+        "url": "https://github.com/oasis-tcs/csaf/blob/master/csaf_2.0/guidance/faq.md",
+        "external": true
+    }
+]

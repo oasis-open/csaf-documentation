@@ -1,0 +1,23 @@
+p {
+  a {
+    color: $secondary;
+
+    @extend .animated-underline--secondary;
+  }
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url(../fonts/darker-grotesque/DarkerGrotesque[wght].woff2) format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url(../fonts/manrope/Manrope-VariableFont_wght.ttf) format('ttf');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
