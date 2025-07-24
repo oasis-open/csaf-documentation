@@ -1,0 +1,80 @@
+{{ define "main" }}
+<main class="md events-index">
+  {{ $events := slice }}
+  {{ $topEvents := slice }}
+  {{ $bottomEvents := slice }}
+
+  {{ range .Site.RegularPages }}
+    {{ if or (strings.HasPrefix .File.Dir "workshops/")
+             (strings.HasPrefix .File.Dir "community-days/") }}
+      {{ if .Params.render.lists.display_in_lists }}
+        {{ $events = $events | append . }}
+        {{ if .Params.render.lists.display_on_top }}
+          {{ $topEvents = $topEvents | append . }}
+        {{ else }}
+          {{ $bottomEvents = $bottomEvents | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $topEvents }}
+  <!-- #region: Next events -->
+  <section class="container my-5">
+    <div class="row g-4">
+      {{ $sortedTopEvents := sort $topEvents "Weight" "Title" "Date" }}
+      {{ range $sortedTopEvents }}
+        {{ $event := . }}
+        <div class="col-12 col-md-6 col-xl-4">
+          <a href="{{ $event.RelPermalink }}">
+            <div class="d-flex flex-column flex-md-column-reverse event-card card h-100 shadow-sm p-3 bg-light">
+              {{ with $event.Params.render.images.preview }}
+                <img src="{{ . }}" class="card-img-top img-fluid" alt="{{ $event.Title }}">
+              {{ end }}
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title"><span>{{ $event.Title }}</span></h3>
+                <!-- #region: Event dates -->
+                {{ with $event.Params.event.dates }}
+                  <p class="card-text small text-muted mb-1">{{ . }}</p>
+                {{ else }}
+                  {{ $currentYear := .Page.Params.event.year | default (now.Year) }}
+                  <p class="card-text small mb-1">
+                    ⚠️ Missing <code>event dates</code> in front matter.<br>
+                    Please open: <code>content/{{ $event.File.Path }}</code><br>
+                    And add dates in the top section. For example:<br>
+                    <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;dates: "December 5–7, {{ $currentYear }}"</code>
+                  </p>
+                {{ end }}
+                <!-- #endregion -->
+                <!-- #region: Event location -->
+                {{ with $event.Params.event.location_short }}
+                  <p class="card-text">{{ . }}</p>
+                {{ else }}
+                  <p class="card-text small">
+                    ⚠️ Missing <code>event location</code> in front matter.<br>
+                    Please open: <code>content/{{ $event.File.Path }}</code><br>
+                    And add location in the top section. For example:<br>
+                    <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_short: "Berlin, Germany"</code><br>
+                    or<br>
+                    <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_short: "online"</code>
+                  </p>
+                {{ end }}
+              </div>
+              <!-- #endregion -->
+            </div>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  <!-- #endregion -->
+  {{ end }}
+
+  {{ if $bottomEvents }}
+    <section class="container">
+      <h2 class="mt-5 mb-4">Previous events</h2>
+      {{ partial "pages/events/list-with-mini-cards.html" $bottomEvents }}
+    </section>
+  {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,20 @@
+.top-minus-10vh {
+  top: -10vh;
+}
+
+.w-80 {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.text-wrapper {
+  @include media-breakpoint-up(lg) {
+    margin-right: 1vw;
+  }
+}
+
+.image-wrapper {
+  img {
+    width: 100%;
+  }
+}

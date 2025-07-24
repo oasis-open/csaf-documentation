@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="container">
+  {{ .Content }}
+  <h2>{{ .Title }}</h2>
+  <ul>
+    {{ $pages := sort .Pages "Weight" "Title" "Date" }}
+    {{ range $pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

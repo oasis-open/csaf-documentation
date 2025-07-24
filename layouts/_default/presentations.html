@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class="container-fluid bg-gray-400 px-3 px-lg-5">
+  <div class="container py-4 py-lg-5">
+    <div class="d-flex flex-column gap-4 gap-lg-5">
+      {{ range .Site.Data.presentations }}
+        <div class="ratio-16x9 mx-auto">
+          {{ partial "general/youtube.html" .link }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</main>
+{{ end }}

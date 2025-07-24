@@ -1,0 +1,15 @@
+languageCode = 'en-US'
+title = 'CSAF'
+disableKinds = ["taxonomy", "RSS", "sitemap"]
+ignoreFiles = [".license$"]
+canonifyURLs = "true"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      table = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"

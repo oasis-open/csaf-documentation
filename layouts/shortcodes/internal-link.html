@@ -1,0 +1,8 @@
+{{- $text := .Get 0 -}}
+{{- if $text -}}
+  <a href="#{{ $text | anchorize }}">{{ $text }}</a>
+{{- else -}}
+  <p class="text-danger">
+    <code>Invalid format. Use: {{`{{< internal-link "Section heading text" >}`}}</code>
+  </p>
+{{- end -}}

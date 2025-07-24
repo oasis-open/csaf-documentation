@@ -1,0 +1,15 @@
+.hidden-underline--accent {
+  @include underline($accent);
+}
+
+.hidden-underline--secondary {
+  @include underline($secondary);
+}
+
+.animated-underline--accent {
+  @include underline($accent, $animated: true);
+}
+
+.animated-underline--secondary {
+  @include underline($secondary, $animated: true);
+}

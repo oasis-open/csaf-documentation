@@ -1,0 +1,8 @@
+{{ $iconName := .name }}
+{{ $iconClass := .class | default "text-primary" }}
+
+{{ $iconPath := printf "icons/%s" $iconName }}
+
+{{ with resources.Get $iconPath }}
+  <span class="{{ $iconClass }}">{{ .Content | safeHTML }}</span>
+{{ end }}

@@ -1,0 +1,25 @@
+{{ `<!--
+  This page was generated automatically and may include components covered by different licenses.
+  For full license details, see LICENSE.md in the source code.
+-->` | safeHTML }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}</title>
+
+  {{ $options := dict "includePaths" (slice "node_modules") }}
+  {{ $style := resources.Get "scss/main.scss" | toCSS $options }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="icon" type="image/png" href="/icons/favicon.png"/>
+</head>
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    {{ partial "general/header.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "general/footer.html" . }}
+  </div>
+</body>
+</html>
+
