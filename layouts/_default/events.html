@@ -35,10 +35,10 @@
                 <h3 class="card-title"><span>{{ $event.Title }}</span></h3>
                 <!-- #region: Event dates -->
                 {{ with $event.Params.event.dates }}
-                  <p class="card-text small text-muted mb-1">{{ . }}</p>
+                  <p class="small text-muted mb-1">{{ . }}</p>
                 {{ else }}
                   {{ $currentYear := .Page.Params.event.year | default (now.Year) }}
-                  <p class="card-text small mb-1">
+                  <p class="small mb-1">
                     ⚠️ Missing <code>event dates</code> in front matter.<br>
                     Please open: <code>content/{{ $event.File.Path }}</code><br>
                     And add dates in the top section. For example:<br>
@@ -48,9 +48,9 @@
                 <!-- #endregion -->
                 <!-- #region: Event location -->
                 {{ with $event.Params.event.location_short }}
-                  <p class="card-text">{{ . }}</p>
+                  <p>{{ . }}</p>
                 {{ else }}
-                  <p class="card-text small">
+                  <p class="small">
                     ⚠️ Missing <code>event location</code> in front matter.<br>
                     Please open: <code>content/{{ $event.File.Path }}</code><br>
                     And add location in the top section. For example:<br>

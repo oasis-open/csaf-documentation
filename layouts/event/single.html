@@ -14,7 +14,7 @@
       {{ else }}
         {{ $dirParts := split .File.Dir "/" }}
         {{ $year := index $dirParts (sub (len $dirParts) 2) }}
-        <p class="card-text">
+        <p>
           ⚠️ Missing <code>event dates</code> in front matter.<br>
           Please open: <code>content/{{ .File.Path }}</code><br>
           And add dates in the top section. For example:<br>
@@ -26,7 +26,7 @@
       {{ with .Params.event.location_long }}
         <p>{{ . }}</p>
       {{ else }}
-        <p class="card-text">
+        <p>
           ⚠️ Missing <code>event location</code> in front matter.<br>
           Please open: <code>content/{{ .File.Path }}</code><br>
           And add location in the top section. For example:<br>

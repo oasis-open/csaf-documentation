@@ -19,6 +19,7 @@ params:
       preview: '/events/default/community_days_list.png'
       header: ''
 ---
+
 `Note:`
 
 `This message is only for editors. Delete this block before publishing the page.`

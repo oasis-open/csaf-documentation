@@ -10,7 +10,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: {{ .Name }}
+    year: { { .Name } }
   render:
     lists:
       display_in_lists: true
@@ -19,11 +19,12 @@ params:
       preview: '/events/default/workshop_list.png'
       header: ''
 ---
+
 `Note:`
 
 `This message is only for editors. Delete this block before publishing the page.`
 
-` To learn how to customize and style an event page, please see the instructions in the README file: `
+`To learn how to customize and style an event page, please see the instructions in the README file:`
 https://github.com/csaf-auxiliary/csaf-website-relaunch#add-a-page-for-the-event
 
 {{< register-button >}}

@@ -64,7 +64,7 @@ To organize files:
    Inside the appropriate event type folder make a new folder
    named for the year.
 
-   * Example: `static/events/workshops/2025/`
+   - Example: `static/events/workshops/2025/`
 
 2. **Add Event Images**:
    Inside the year folder, drop in all images for each individual event.
@@ -73,7 +73,7 @@ To organize files:
    If you want to upload files to share with the users, create a dedicated
    folder `download` inside of the year folder and upload such files there.
 
-   * Example: `static/events/workshops/2025/download/`
+   - Example: `static/events/workshops/2025/download/`
 
 Here’s how it might look:
 
@@ -220,7 +220,7 @@ Required parameters **must not** be empty.
   - You can write a custom title anytime.
 
 - **`type`**
-  *Please don’t change this!*
+  _Please don’t change this!_
 
   - It’s a technical setting that tells Hugo how to build the page.
 
@@ -295,8 +295,8 @@ Required parameters **must not** be empty.
   - `false` or not set = not shown in the lists
 
   ⚠️ This does not control whether the page is live —
-    it just hides or shows it in the list views.
-    To publish or unpublish, use the `draft` setting.
+  it just hides or shows it in the list views.
+  To publish or unpublish, use the `draft` setting.
 
 - **`params.render.lists.display_on_top`**
   Do you want the event to appear in a large card
@@ -321,15 +321,15 @@ Published events can be visible on the following pages:
 - The event page (for Example `/workshops/2024/`)
 
 - List pages `/events/` and `/workshops/` or `/community-days/`
-depending on the folder where event file is uploaded.
+  depending on the folder where event file is uploaded.
 
 Page visibility is defined on the top of its .md-file.
 
 To **unpublish** an event or year page (hide it completely), set:
 
-  ```yaml
-  draft: true
-  ```
+```yaml
+draft: true
+```
 
 This will remove the page from all the list pages and make it not accessible
 by its direct URL.
@@ -337,13 +337,13 @@ by its direct URL.
 **To hide a link to the event from the lists** without unpublishing its page,
 set:
 
-  ```yaml
-  params:
-    ...
-    render:
-      lists:
-        display_in_lists: true
-  ```
+```yaml
+params:
+  ...
+  render:
+    lists:
+      display_in_lists: true
+```
 
 This will remove the page from all the list pages,
 but it can still be found by its direct URL.
@@ -404,7 +404,7 @@ Events are sorted based on two parameters from the front matter:
 - **Weight:** Pages with lower numbers appear first.
 
 - **Title:** If Weight is the same (or missing), events
-are sorted alphabetically by title.
+  are sorted alphabetically by title.
 
 **Default behavior:**
 All events have a default weight of `1`.
