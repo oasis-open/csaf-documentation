@@ -118,6 +118,10 @@
   h3 {
     color: $blue-600;
   }
+
+  .btn {
+    font-size: calc(1rem + 0.25vw);
+  }
 }
 
 .block-with-background {

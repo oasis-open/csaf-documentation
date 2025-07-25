@@ -15,6 +15,9 @@ params:
     lists:
       display_in_lists: true
       display_on_top: true
+      button:
+        url: 'mailto:cfp@csaf.io'
+        text: 'Submit Your Proposal'
     images:
       preview: '/events/default/community_days_list.png'
       header: ''

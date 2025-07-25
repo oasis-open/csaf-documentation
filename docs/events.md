@@ -310,6 +310,23 @@ Required parameters **must not** be empty.
 not whether it is listed at all.
 Use `display_in_lists` (above) to include it in the list.
 
+- **`params.render.lists.button`**
+  Adds button to the event card on the /events/ page.
+
+  If is present, mush have both `url` and `text` set.
+
+  Example:
+
+  ```yaml
+  params:
+    ...
+    render:
+      lists:
+        button:
+          url: 'mailto:cfp@csaf.io'
+          text: 'Submit Your Proposal'
+  ```
+
 ---
 
 ### Event information visibility

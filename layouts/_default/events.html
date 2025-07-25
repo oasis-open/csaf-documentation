@@ -59,6 +59,44 @@
                     <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_short: "online"</code>
                   </p>
                 {{ end }}
+                {{ with $event.Params.render.lists.button }}
+                  {{ $text := .text }}
+                  {{ $url := .url }}
+                  {{ if or (not $text) (not $url) (eq $url "mailto:") }}
+                    <p class="small mb-0">
+                      ⚠️ Invalid <code>button</code> configuration in front matter:
+                    </p>
+                    <ul class="small py-0 my-0">
+                      {{ if not $text }}
+                        <li>Missing <code>text</code> attribute.<br></li>
+                      {{ end }}
+                      {{ if or (not $url) (eq $url "mailto:") }}
+                        <li>Invalid <code>url</code> attribute: <code>"{{ $url }}"</code><br></li>
+                      {{ end }}
+                    </ul>
+                    <p class="small">
+                      Please open: <code>content/{{ $event.File.Path }}</code><br>
+                      And fix or remove the <code>button</code> block. For example:<br>
+                      <code>
+                        params:<br>
+                        &nbsp;&nbsp;render:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;lists:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text: 'Register'<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url: 'mailto:cfp@csaf.io'
+                      </code>
+                    </p>
+                  {{ else }}
+                    <div class="col-12 col-md">
+                      <a
+                        class="btn btn-muted btn-xs py-1 px-2 mt-2 mb-1"
+                        href="{{ $url }}"
+                      >
+                        {{ $text }}
+                      </a>
+                    </div>
+                  {{ end }}
+                {{ end }}
               </div>
               <!-- #endregion -->
             </div>
