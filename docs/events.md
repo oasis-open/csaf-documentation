@@ -64,7 +64,7 @@ To organize files:
    Inside the appropriate event type folder make a new folder
    named for the year.
 
-   * Example: `static/events/workshops/2025/`
+   - Example: `static/events/workshops/2025/`
 
 2. **Add Event Images**:
    Inside the year folder, drop in all images for each individual event.
@@ -73,7 +73,7 @@ To organize files:
    If you want to upload files to share with the users, create a dedicated
    folder `download` inside of the year folder and upload such files there.
 
-   * Example: `static/events/workshops/2025/download/`
+   - Example: `static/events/workshops/2025/download/`
 
 Here’s how it might look:
 
@@ -186,6 +186,7 @@ Example:
 ```yaml
 ---
 title: 'Workshop 2024'
+subtitle: ''
 weight: 1
 type: 'event'
 draft: true
@@ -219,7 +220,7 @@ Required parameters **must not** be empty.
   - You can write a custom title anytime.
 
 - **`type`**
-  *Please don’t change this!*
+  _Please don’t change this!_
 
   - It’s a technical setting that tells Hugo how to build the page.
 
@@ -255,6 +256,17 @@ Required parameters **must not** be empty.
 
 #### Optional Settings
 
+- **`subtitle`**
+  If provided, displayed in the header section of the event page
+  right below the title.
+
+  Example:
+
+  ```markdown
+  title: 'Community Days 2025'
+  subtitle: 'Call for Presentations'
+  ```
+
 - **`weight`**
   Controls the order of events in lists.
 
@@ -283,8 +295,8 @@ Required parameters **must not** be empty.
   - `false` or not set = not shown in the lists
 
   ⚠️ This does not control whether the page is live —
-    it just hides or shows it in the list views.
-    To publish or unpublish, use the `draft` setting.
+  it just hides or shows it in the list views.
+  To publish or unpublish, use the `draft` setting.
 
 - **`params.render.lists.display_on_top`**
   Do you want the event to appear in a large card
@@ -298,6 +310,34 @@ Required parameters **must not** be empty.
 not whether it is listed at all.
 Use `display_in_lists` (above) to include it in the list.
 
+- **`params.render.lists.button`**
+  Adds button to the event card on the /events/ page.
+
+  If is present, mush have both `url` and `text` set. If the whole `button`
+  block is skipped, the button is not added to the event card.
+
+  Can also have optional parameter `url_parameters`. If provided, they will be
+  added to the url after the '?' sign.
+
+  Example:
+
+  ```yaml
+  params:
+    ...
+    render:
+      lists:
+        button:
+          url: 'mailto:cfp@csaf.io'
+          text: 'Submit Your Proposal'
+          url_parameters: subject=[CSAF Community Days 2025][Presentation Proposal]<Presentation Title>
+  ```
+
+  **Output:** button with url
+
+  ```
+  mailto:cfp@csaf.io?subject=[CSAF Community Days 2025][Presentation Proposal]<Presentation Title>
+  ```
+
 ---
 
 ### Event information visibility
@@ -309,15 +349,15 @@ Published events can be visible on the following pages:
 - The event page (for Example `/workshops/2024/`)
 
 - List pages `/events/` and `/workshops/` or `/community-days/`
-depending on the folder where event file is uploaded.
+  depending on the folder where event file is uploaded.
 
 Page visibility is defined on the top of its .md-file.
 
 To **unpublish** an event or year page (hide it completely), set:
 
-  ```yaml
-  draft: true
-  ```
+```yaml
+draft: true
+```
 
 This will remove the page from all the list pages and make it not accessible
 by its direct URL.
@@ -325,13 +365,13 @@ by its direct URL.
 **To hide a link to the event from the lists** without unpublishing its page,
 set:
 
-  ```yaml
-  params:
-    ...
-    render:
-      lists:
-        display_in_lists: true
-  ```
+```yaml
+params:
+  ...
+  render:
+    lists:
+      display_in_lists: true
+```
 
 This will remove the page from all the list pages,
 but it can still be found by its direct URL.
@@ -392,7 +432,7 @@ Events are sorted based on two parameters from the front matter:
 - **Weight:** Pages with lower numbers appear first.
 
 - **Title:** If Weight is the same (or missing), events
-are sorted alphabetically by title.
+  are sorted alphabetically by title.
 
 **Default behavior:**
 All events have a default weight of `1`.
@@ -424,7 +464,18 @@ You can add them in your Markdown files as needed.
 
 #### 📩 `{{< register-button >}}`
 
-Adds a "Register now" button that links to `mailto:csaf@bsi.bund.de`.
+By default adds a "Register now" button that links to `mailto:csaf@bsi.bund.de`.
+
+Dafault text on the button and link can be replaced by adding custom values
+in the double quotes.
+
+Examples:
+
+```markdown
+{{< register-button email="cfp@csaf.io" >}}
+{{< register-button text="Submit Your Proposal" >}}
+{{< register-button email="cfp@csaf.io" text="Submit Your Proposal" >}}
+```
 
 ---
 
@@ -457,6 +508,18 @@ Example:
 {{< paragraph-accent >}}
 Markdown text.
 {{< /paragraph-accent >}}
+```
+
+#### 🟦 `{{< block-with-background >}}...{{< /block-with-background >}}`
+
+Highlights a block by adding light-blue background and dark-blue border.
+
+Example:
+
+```markdown
+{{< block-with-background >}}
+Markdown text.
+{{< /block-with-background >}}
 ```
 
 ---

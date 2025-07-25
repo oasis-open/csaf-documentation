@@ -44,7 +44,7 @@
     width: 100%;
     margin-top: auto;
 
-    @include media-breakpoint-down(md)  {
+    @include media-breakpoint-down(md) {
       padding-inline: 16px;
       padding-top: 16px;
     }
@@ -54,7 +54,7 @@
       padding-bottom: 8px;
     }
 
-    @include media-breakpoint-up(lg)  {
+    @include media-breakpoint-up(lg) {
       padding-inline: 16px;
       padding-bottom: 16px;
     }
@@ -111,7 +111,23 @@
 
   :first-child {
     &:is(h1, h2, h3, h4) {
-    margin-top: 0;
+      margin-top: 0;
     }
   }
+
+  h3 {
+    color: $blue-600;
+  }
+
+  .btn {
+    font-size: calc(1rem + 0.25vw);
+  }
+}
+
+.block-with-background {
+  padding: map-get($spacers, 4);
+  margin-top: 24px;
+  background-color: $blue-100;
+  border: 1px solid $blue-600;
+  border-radius: 16px;
 }
