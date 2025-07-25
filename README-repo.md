@@ -100,6 +100,13 @@ hugo server -D
 
 The site will be accessible at http://localhost:1313/.
 
+If styles are not rendered correctly (for example the fonts are different from
+the published page), start the server with binding:
+
+```bash
+hugo server -D --bind 127.0.0.1 --baseURL http://127.0.0.1:1313
+```
+
 ---
 
 ## Directory structure
