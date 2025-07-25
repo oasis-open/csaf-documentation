@@ -114,4 +114,16 @@
     margin-top: 0;
     }
   }
+
+  h3 {
+    color: $blue-600;
+  }
+}
+
+.block-with-background {
+  padding: map-get($spacers, 4);
+  margin-top: 24px;
+  background-color: $blue-100;
+  border: 1px solid $blue-600;
+  border-radius: 16px;
 }

@@ -186,6 +186,7 @@ Example:
 ```yaml
 ---
 title: 'Workshop 2024'
+subtitle: ''
 weight: 1
 type: 'event'
 draft: true
@@ -254,6 +255,17 @@ Required parameters **must not** be empty.
 ---
 
 #### Optional Settings
+
+- **`subtitle`**
+  If provided, displayed in the header section of the event page
+  right below the title.
+
+  Example:
+
+  ```markdown
+  title: 'Community Days 2025'
+  subtitle: 'Call for Presentations'
+  ```
 
 - **`weight`**
   Controls the order of events in lists.
@@ -424,7 +436,18 @@ You can add them in your Markdown files as needed.
 
 #### 📩 `{{< register-button >}}`
 
-Adds a "Register now" button that links to `mailto:csaf@bsi.bund.de`.
+By default adds a "Register now" button that links to `mailto:csaf@bsi.bund.de`.
+
+Dafault text on the button and link can be replaced by adding custom values
+in the double quotes.
+
+Examples:
+
+```markdown
+{{< register-button email="cfp@csaf.io" >}}
+{{< register-button text="Submit Your Proposal" >}}
+{{< register-button email="cfp@csaf.io" text="Submit Your Proposal" >}}
+```
 
 ---
 
@@ -457,6 +480,18 @@ Example:
 {{< paragraph-accent >}}
 Markdown text.
 {{< /paragraph-accent >}}
+```
+
+#### 🟦 `{{< block-with-background >}}...{{< /block-with-background >}}`
+
+Highlights a block by adding light-blue background and dark-blue border.
+
+Example:
+
+```markdown
+{{< block-with-background >}}
+Markdown text.
+{{< /block-with-background >}}
 ```
 
 ---

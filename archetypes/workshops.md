@@ -1,5 +1,6 @@
 ---
 title: 'Workshop {{ replace .Name "-" " " | title }}'
+subtitle: ''
 weight: 1
 type: 'event'
 draft: true
