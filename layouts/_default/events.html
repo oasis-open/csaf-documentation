@@ -87,6 +87,10 @@
                       </code>
                     </p>
                   {{ else }}
+                    {{ $url_parameters := .url_parameters }}
+                    {{ if $url_parameters }}
+                      {{ $url = printf "%s?%s" $url $url_parameters }}
+                    {{ end }}
                     <div class="col-12 col-md">
                       <a
                         class="btn btn-muted btn-xs py-1 px-2 mt-2 mb-1"

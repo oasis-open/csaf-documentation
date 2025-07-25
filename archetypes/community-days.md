@@ -18,6 +18,7 @@ params:
       button:
         url: 'mailto:cfp@csaf.io'
         text: 'Submit Your Proposal'
+        url_parameters: 'subject=[CSAF Community Days {{ .Name }}][Presentation Proposal]<Presentation Title>'
     images:
       preview: '/events/default/community_days_list.png'
       header: ''
