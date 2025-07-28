@@ -191,6 +191,8 @@ For processing the text, the following settings are applied:
 
 - [Events](/docs/events.md)
 
+- [Home Page](/docs/index.md)
+
 ---
 
 ## History
