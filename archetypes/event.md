@@ -20,7 +20,7 @@ params:
       header: ''
 ---
 
-`Note:`
+`⚠️ Note:`
 
 `This message is only for editors. Delete this block before publishing the page.`
 

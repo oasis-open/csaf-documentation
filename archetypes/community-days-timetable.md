@@ -23,7 +23,7 @@ params:
       header: ''
 ---
 
-`Note:`
+`⚠️ Note:`
 
 `This message is only for editors. Delete this block before publishing the page.`
 
@@ -48,7 +48,9 @@ Event description.
 
 ## Location
 
-`Information Security Hub at Munich Airport (Südallee 1, 85356 München, Germany)`
+`⚠️ Replace location name and coordinates for the map below and then delete this line.`
+
+Information Security Hub at Munich Airport (Südallee 1, 85356 München, Germany)
 
 {{< open-street-maps "48.350442,11.774101" >}}
 
