@@ -55,7 +55,7 @@ Event description.
 ## Registration for In-Person Attendance
 
 To attend the CSAF Community Days {{ .Name }} in person, please register by sending an
-email to [csaf@bsi.bund.de](mailto:csaf@bsi.bund.de). We look forward to
+email to [csaf@bsi.bund.de](mailto:csaf@bsi.bund.de?subject=[CSAF Community Days {{ .Name }}][Registration]). We look forward to
 welcoming you to `Munich`!
 
 {{< register-button email="csaf@bsi.bund.de?subject=[CSAF Community Days {{ .Name }}][Registration]" >}}

@@ -92,4 +92,4 @@ Please submit your presentation proposal by clicking on the link below:
 ### Contact Information
 
 If you have any questions, feel free to reach out to us at
-[cfp@csaf.io](mailto:cfp@csaf.io).
+[cfp@csaf.io](mailto:cfp@csaf.io?subject=[CSAF Community Days {{ .Name }}]).
