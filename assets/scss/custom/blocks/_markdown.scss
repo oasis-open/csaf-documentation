@@ -102,4 +102,8 @@
   tbody tr:nth-of-type(odd) {
     background-color: $light;
   }
+
+  a {
+    text-decoration: none !important;
+  }
 }
