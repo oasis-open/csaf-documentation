@@ -128,11 +128,3 @@
     font-size: calc(1rem + 0.25vw);
   }
 }
-
-.block-with-background {
-  padding: map-get($spacers, 4);
-  margin-top: 24px;
-  background-color: $blue-100;
-  border: 1px solid $blue-600;
-  border-radius: 16px;
-}
