@@ -9,7 +9,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: {{ .Name }}
+    year: { { .Name } }
   render:
     lists:
       display_in_lists: true
@@ -29,8 +29,8 @@ params:
 
 `Values in backticks below (dates and location) are the placeholders. Update them and remove the backsticks before publishing.`
 
-`To learn how to customize and style an event page, please see the instructions in the README file:`
-https://github.com/oasis-open/csaf-documentation/main/README-repo.md#add-a-page-for-the-event
+`To learn how to customize and style an event page, please see the instructions in the`
+[README file](/README-repo.md#add-a-page-for-the-event)
 
 ## Overview
 
@@ -42,8 +42,8 @@ Event description.
 
 ### CSAF Community Day 1 (`November 12, {{ .Name }}`)
 
-| Time | Session | TLP |Speaker |
-| --- | --- | --- | --- |
+| Time              | Session                                   | TLP               | Speaker              |
+| ----------------- | ----------------------------------------- | ----------------- | -------------------- |
 | 13:30 - 13:45 CET | {{< internal-link "Welcome & Keynote" >}} | {{< tlp-clear >}} | Justin Murphy (CISA) |
 
 ## Location

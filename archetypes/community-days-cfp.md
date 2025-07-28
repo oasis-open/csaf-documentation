@@ -10,7 +10,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: {{ .Name }}
+    year: { { .Name } }
   render:
     lists:
       display_in_lists: true
@@ -30,8 +30,8 @@ params:
 
 `Values in backticks below (dates and location) are the placeholders. Update them and remove the backsticks before publishing.`
 
-`To learn how to customize and style an event page, please see the instructions in the README file:`
-https://github.com/oasis-open/csaf-documentation/main/README-repo.md#add-a-page-for-the-event
+`To learn how to customize and style an event page, please see the instructions in the`
+[README file](/README-repo.md#add-a-page-for-the-event)
 
 ### About CSAF Community Days
 
