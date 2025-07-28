@@ -13,8 +13,8 @@ until the user explicitly clicks on the link to watch the video.
 Follow these steps to **add new presentation**
 (in all the steps insert the id of the video instead of the `<video-id>`):
 
-1. Open the [data/presentations.json](data/presentations.json) file,
-and insert a new block like this:
+1. Open the [data/presentations.json](/data/presentations.json) file,
+   and insert a new block like this:
 
 ```
     ,
@@ -27,7 +27,7 @@ and insert a new block like this:
 Name the file in the format `<video-id>.jpg`.
 
 3. Add the file to the
-   [static/youtube_covers/](static/youtube_covers/) folder.
+   [static/youtube_covers/](/static/youtube_covers/) folder.
 
 4. In the same folder create a file with the name `<video-id>.jpg.license`
    and provide the licensing information in this format:
