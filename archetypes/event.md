@@ -25,4 +25,4 @@ params:
 `This message is only for editors. Delete this block before publishing the page.`
 
 `To learn how to customize and style an event page, please see the instructions in the README file:`
-https://github.com/csaf-auxiliary/csaf-website-relaunch#add-a-page-for-the-event
+https://github.com/oasis-open/csaf-documentation/main/README-repo.md#add-a-page-for-the-event

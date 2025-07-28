@@ -73,7 +73,7 @@ Before starting the development server, ensure you have the following installed:
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/csaf-auxiliary/csaf-website-relaunch.git
+git clone https://github.com/oasis-open/csaf-documentation/main/README-repo.md.git
 ```
 
 ### 2. Install Dependencies
