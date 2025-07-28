@@ -12,13 +12,15 @@
       {{ with .Params.event.dates }}
         <p class="mb-0">{{ . }}</p>
       {{ else }}
-        {{ $dirParts := split .File.Dir "/" }}
-        {{ $year := index $dirParts (sub (len $dirParts) 2) }}
         <p>
           ⚠️ Missing <code>event dates</code> in front matter.<br>
           Please open: <code>content/{{ .File.Path }}</code><br>
           And add dates in the top section. For example:<br>
-          <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;dates: 'December 5–7, {{ $year }}'</code>
+          <code>
+            params:<br>
+            &nbsp;&nbsp;event:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dates: 'December 5–7, {{ .Params.event.year }}'
+          </code>
         </p>
       {{ end }}
       <!-- #endregion -->
@@ -30,9 +32,19 @@
           ⚠️ Missing <code>event location</code> in front matter.<br>
           Please open: <code>content/{{ .File.Path }}</code><br>
           And add location in the top section. For example:<br>
-          <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_long: 'Berlin, Germany'</code><br>
+          <code>
+            params:<br>
+            &nbsp;&nbsp;event:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;location_long: 'Berlin, Germany'
+          </code><br>
           or<br>
-          <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_long: 'online'</code>
+          <code>
+            params:<br>
+            &nbsp;&nbsp;event:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;location_long: 'online'
+          </code>
         </p>
       {{ end }}
       <!-- #endregion -->
