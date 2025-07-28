@@ -26,85 +26,83 @@
       {{ range $sortedTopEvents }}
         {{ $event := . }}
         <div class="col-12 col-md-6 col-xl-4">
-          <a href="{{ $event.RelPermalink }}">
-            <div class="d-flex flex-column flex-md-column-reverse event-card card h-100 shadow-sm p-3 bg-light">
-              {{ with $event.Params.render.images.preview }}
-                <img src="{{ . }}" class="card-img-top img-fluid" alt="{{ $event.Title }}">
+          <div class="d-flex flex-column flex-md-column-reverse card event-card h-100 shadow-sm p-3 bg-light position-relative">
+            {{ with $event.Params.render.images.preview }}
+              <img src="{{ . }}" class="card-img-top img-fluid" alt="{{ $event.Title }}">
+            {{ end }}
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title"><span>{{ $event.Title }}</span></h3>
+              <!-- #region: Event dates -->
+              {{ with $event.Params.event.dates }}
+                <p class="small text-muted mb-1">{{ . }}</p>
+              {{ else }}
+                {{ $currentYear := .Page.Params.event.year | default (now.Year) }}
+                <p class="small mb-1">
+                  ⚠️ Missing <code>event dates</code> in front matter.<br>
+                  Please open: <code>content/{{ $event.File.Path }}</code><br>
+                  And add dates in the top section. For example:<br>
+                  <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;dates: "December 5–7, {{ $currentYear }}"</code>
+                </p>
               {{ end }}
-              <div class="card-body d-flex flex-column">
-                <h3 class="card-title"><span>{{ $event.Title }}</span></h3>
-                <!-- #region: Event dates -->
-                {{ with $event.Params.event.dates }}
-                  <p class="small text-muted mb-1">{{ . }}</p>
-                {{ else }}
-                  {{ $currentYear := .Page.Params.event.year | default (now.Year) }}
-                  <p class="small mb-1">
-                    ⚠️ Missing <code>event dates</code> in front matter.<br>
-                    Please open: <code>content/{{ $event.File.Path }}</code><br>
-                    And add dates in the top section. For example:<br>
-                    <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;dates: "December 5–7, {{ $currentYear }}"</code>
-                  </p>
-                {{ end }}
-                <!-- #endregion -->
-                <!-- #region: Event location -->
-                {{ with $event.Params.event.location_short }}
-                  <p>{{ . }}</p>
-                {{ else }}
-                  <p class="small">
-                    ⚠️ Missing <code>event location</code> in front matter.<br>
-                    Please open: <code>content/{{ $event.File.Path }}</code><br>
-                    And add location in the top section. For example:<br>
-                    <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_short: "Berlin, Germany"</code><br>
-                    or<br>
-                    <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_short: "online"</code>
-                  </p>
-                {{ end }}
-                {{ with $event.Params.render.lists.button }}
-                  {{ $text := .text }}
-                  {{ $url := .url }}
-                  {{ if or (not $text) (not $url) (eq $url "mailto:") }}
-                    <p class="small mb-0">
-                      ⚠️ Invalid <code>button</code> configuration in front matter:
-                    </p>
-                    <ul class="small py-0 my-0">
-                      {{ if not $text }}
-                        <li>Missing <code>text</code> attribute.<br></li>
-                      {{ end }}
-                      {{ if or (not $url) (eq $url "mailto:") }}
-                        <li>Invalid <code>url</code> attribute: <code>"{{ $url }}"</code><br></li>
-                      {{ end }}
-                    </ul>
-                    <p class="small">
-                      Please open: <code>content/{{ $event.File.Path }}</code><br>
-                      And fix or remove the <code>button</code> block. For example:<br>
-                      <code>
-                        params:<br>
-                        &nbsp;&nbsp;render:<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;lists:<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button:<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text: 'Register'<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url: 'mailto:cfp@csaf.io'
-                      </code>
-                    </p>
-                  {{ else }}
-                    {{ $url_parameters := .url_parameters }}
-                    {{ if $url_parameters }}
-                      {{ $url = printf "%s?%s" $url $url_parameters }}
-                    {{ end }}
-                    <div class="col-12 col-md">
-                      <a
-                        class="btn btn-muted btn-xs py-1 px-2 mt-2 mb-1"
-                        href="{{ $url }}"
-                      >
-                        {{ $text }}
-                      </a>
-                    </div>
-                  {{ end }}
-                {{ end }}
-              </div>
               <!-- #endregion -->
+              <!-- #region: Event location -->
+              {{ with $event.Params.event.location_short }}
+                <p>{{ . }}</p>
+              {{ else }}
+                <p class="small">
+                  ⚠️ Missing <code>event location</code> in front matter.<br>
+                  Please open: <code>content/{{ $event.File.Path }}</code><br>
+                  And add location in the top section. For example:<br>
+                  <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_short: "Berlin, Germany"</code><br>
+                  or<br>
+                  <code>params:<br>&nbsp;&nbsp;event:<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;location_short: "online"</code>
+                </p>
+              {{ end }}
+              <!-- #region: Event registration button -->
+              {{ with $event.Params.render.lists.button }}
+                {{ $text := .text }}
+                {{ $url := .url }}
+
+                {{ if or (not $text) (not $url) (eq $url "mailto:") }}
+                  <p class="small mb-0">
+                    ⚠️ Invalid <code>button</code> configuration in front matter:
+                  </p>
+                  <ul class="small py-0 my-0">
+                    {{ if not $text }}
+                      <li>Missing <code>text</code> attribute.<br></li>
+                    {{ end }}
+                    {{ if or (not $url) (eq $url "mailto:") }}
+                      <li>Invalid <code>url</code> attribute: <code>"{{ $url }}"</code><br></li>
+                    {{ end }}
+                  </ul>
+                  <p class="small">
+                    Please open: <code>content/{{ $event.File.Path }}</code><br>
+                    And fix or remove the <code>button</code> block. For example:<br>
+                    <code>
+                      params:<br>
+                      &nbsp;&nbsp;render:<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;lists:<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button:<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text: 'Register'<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url: 'mailto:cfp@csaf.io'
+                    </code>
+                  </p>
+                {{ else }}
+                  {{ if .url_parameters }}
+                    {{ $url = printf "%s?%s" .url .url_parameters }}
+                  {{ end }}
+                  <a
+                    class="btn btn-muted event-card-btn btn-xs py-1 px-3 mt-2 mb-1 position-relative"
+                    href="{{ $url }}"
+                  >
+                    {{ $text }}
+                  </a>
+                {{ end }}
+              {{ end }}
+              <!-- #endregion -->
+              <a href="{{ $event.RelPermalink }}" class="stretched-link"></a>
             </div>
-          </a>
+          </div>
         </div>
       {{ end }}
     </div>
