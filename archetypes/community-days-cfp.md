@@ -81,7 +81,7 @@ available in person._
 
 Please submit your presentation proposal by clicking on the link below:
 
-{{< register-button email="cfp@csaf.io" text="Submit Your Proposal" >}}
+{{< register-button email="cfp@csaf.io?subject=[CSAF Community Days {{ .Name }}][Presentation Proposal]<Presentation Title>" text="Submit Your Proposal" >}}
 
 ### Important Dates
 

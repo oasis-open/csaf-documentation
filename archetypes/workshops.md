@@ -10,7 +10,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: { { .Name } }
+    year: {{ .Name }}
   render:
     lists:
       display_in_lists: true
@@ -42,9 +42,9 @@ Markdown text.
 {{< event-timetable >}}
 **Workshop 1:**
 
-09.12.2024 13:30-18:00 (Part 1)
+`09.12.{{ .Name }} 13:30-18:00` (Part 1)
 
-10.12.2024 08:00-12:30 (Part 2)
+`10.12.{{ .Name }} 08:00-12:30` (Part 2)
 
 (limited to 40 participants)
 {{< /event-timetable >}}

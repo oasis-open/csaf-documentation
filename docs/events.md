@@ -124,17 +124,27 @@ You can either start with a ready-to-use template or create a blank page.
 - **Using a template** (recommended for easier setup):
 
   ```
-  hugo new <event-type>/<year>.md
+  hugo new -k <template-name> <event-type>/<year>.md
   ```
 
-  Available event types: `workshops`, `community-days`.
+  Available event types: `workshops`, `community-days-cfp`, `community-days-timetable`.
 
   Examples:
 
   ```
-  hugo new workshops/2025.md
-  hugo new community-days/2025.md
+  hugo new -k workshops workshops/2025.md
+  hugo new -k community-days-cfp community-days/2026.md
+  hugo new -k community-days-timetable community-days/2026.md
   ```
+
+  **Important notes:**
+
+  - **Files are not automatically replaced.**
+    If a file with the same name already exists, Hugo will not overwrite it.
+
+  - **Switching between templates (e.g., Community Days CFP → Timetable):**
+    If you're replacing a Community Days CFP page with a Timetable page, delete
+    the old file manually before running the command.
 
 - **Starting with an empty page:**
 
