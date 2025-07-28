@@ -1,7 +1,7 @@
 # Changing the highlighted link
 
 When a page should be promoted to the site visitors (for example new event),
-a banner can be added on the homa page right below the navigation bar.
+a banner can be added on the home page right below the navigation bar.
 
 To add, change or remove the banner, open [/content/\_index.md](/content/_index.md)
 and change the data in the front matter (upper section of the file between
@@ -13,7 +13,7 @@ Add both url and text attributes of params.highlighted_page:
 
 ```yml
 ---
-...
+---
 params:
   highlighted_page:
     url: '/events/community-days/2025/'
@@ -30,7 +30,7 @@ Change url and text to empty strings:
 
 ```yml
 ---
-...
+---
 params:
   highlighted_page:
     url: ''

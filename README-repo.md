@@ -48,7 +48,7 @@ Before starting the development server, ensure you have the following installed:
 - **Hugo** (v0.145.0 or later, extended edition):
   Required for generating the static website from the source code files.
 
-  - Check if Hugo is installedby running `hugo version` in the terminal.
+  - Check if Hugo is installed, by running `hugo version` in the terminal.
 
   - [Install Hugo](https://gohugo.io/getting-started/installing/) if necessary.
 
