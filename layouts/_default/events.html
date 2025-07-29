@@ -3,10 +3,13 @@
   {{ $events := slice }}
   {{ $topEvents := slice }}
   {{ $bottomEvents := slice }}
+  {{ $currentPath := .RelPermalink | strings.TrimPrefix "/" | strings.TrimSuffix "/" }}
 
   {{ range .Site.RegularPages }}
-    {{ if or (strings.HasPrefix .File.Dir "workshops/")
-             (strings.HasPrefix .File.Dir "community-days/") }}
+    {{ $dir := .File.Dir | strings.TrimSuffix "/" }}
+    {{ $matchesFolder := or (eq $currentPath "events") (eq $dir $currentPath) }}
+
+    {{ if $matchesFolder }}
       {{ if .Params.render.lists.display_in_lists }}
         {{ $events = $events | append . }}
         {{ if .Params.render.lists.display_on_top }}
