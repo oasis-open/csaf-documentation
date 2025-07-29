@@ -53,7 +53,7 @@ Information Security Hub at Munich Airport (Südallee 1, 85356 München, Germany
 ## Registration for In-Person Attendance
 
 To attend the CSAF Community Days {{ .Name }} in person, please register by sending an
-email to [csaf@bsi.bund.de](mailto:csaf@bsi.bund.de?subject=[CSAF Community Days {{ .Name }}][Registration]). We look forward to
+email to [csaf@bsi.bund.de](mailto:csaf@bsi.bund.de?subject=%5BCSAF%20Community%20Days%20{{ .Name }}%5D%5BRegistration%5D). We look forward to
 welcoming you to `Munich`!
 
 {{< register-button email="csaf@bsi.bund.de?subject=[CSAF Community Days {{ .Name }}][Registration]" >}}
