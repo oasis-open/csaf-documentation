@@ -5,7 +5,7 @@ draft: false
 
 params:
   highlighted_page:
-    url: '/events/community-days/2025/'
+    url: '/community-days/2025/'
     text: 'Submit your presentation for Community Days 2025.'
 ---
 
