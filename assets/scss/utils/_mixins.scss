@@ -1,5 +1,4 @@
 @mixin underline($underline-color: $secondary, $animated: false) {
-  text-decoration: none !important;
   --underline-color: #{$underline-color};
   background-image: linear-gradient(to right, var(--underline-color) 100%, var(--underline-color) 100%);
   background-repeat: no-repeat;

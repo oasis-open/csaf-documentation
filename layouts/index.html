@@ -1,18 +1,5 @@
 {{ define "main" }}
 <main class="index pb-4">
-  <!-- region: Highlighted link -->
-  {{ with .Params.highlighted_page }}
-    {{ if and (.url) (.text) }}
-      <div class="alert alert-secondary m-0 py-2 rounded-0">
-        <div class="m-auto" style="max-width: 1416px">
-          <span>{{ .text }}</span>
-          <a class="alert-link" href="{{ .url }}">Learn more ></a>
-        </div>
-      </div>
-    {{ end }}
-  {{ end }}
-  <!-- endregion -->
-
   <!-- #region: OASIS Header -->
   <div class="index__header text-center">
     <div class="container py-md-6">
