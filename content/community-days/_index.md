@@ -1,6 +1,7 @@
 ---
 title: 'Community days'
 type: 'event'
+layout: 'events'
 draft: false
 ---
 <!--
