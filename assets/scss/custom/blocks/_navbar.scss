@@ -192,3 +192,20 @@ div.logo-container {
     }
   }
 }
+
+.highlighted-link {
+  transition: all ease 0.4s;
+
+  div {
+    transition: all ease 0.4s;
+  }
+
+  &:hover {
+    background-color: lighten(rgb(153, 186, 217), 12%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    div {
+      color: $secondary;
+    }
+  }
+}

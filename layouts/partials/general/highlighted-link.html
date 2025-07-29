@@ -1,5 +1,5 @@
 {{ $highlight := .Site.Data.navbarHighlightedLink }}
-{{ $current := .Permalink | relURL }}
+{{ $current := .RelPermalink }}
 
 {{ $hasVisibleContent := and ($highlight.visible) ($highlight.url) ($highlight.text) }}
 
@@ -14,7 +14,7 @@
   {{ end }}
 
   {{ if not $isExcluded }}
-  <a class="alert-link alert alert-secondary m-0 py-2 rounded-0" href="{{ $highlight.url }}">
+  <a class="alert-link alert alert-secondary highlighted-link m-0 py-2 rounded-0" href="{{ $highlight.url }}">
     <div class="m-auto" style="max-width: 1416px">
       {{ $highlight.text }}
     </div>
