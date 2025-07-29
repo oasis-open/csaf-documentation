@@ -14,10 +14,6 @@ params:
     lists:
       display_in_lists: true
       display_on_top: true
-      button:
-        url: 'csaf@bsi.bund.de'
-        text: 'Register Now'
-        url_parameters: 'subject=[CSAF Community Days {{ .Name }}][Registration]'
     images:
       preview: '/events/default/community_days_list.png'
       header: ''

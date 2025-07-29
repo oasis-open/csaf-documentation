@@ -268,6 +268,7 @@ Required parameters **must not** be empty.
 
 - **`subtitle`**
   If provided, displayed in the header section of the event page
+  and in the big card on the events lists pages (if page is displayed on top)
   right below the title.
 
   Example:
@@ -319,34 +320,6 @@ Required parameters **must not** be empty.
 ⚠️ This setting only affects how the event is displayed —
 not whether it is listed at all.
 Use `display_in_lists` (above) to include it in the list.
-
-- **`params.render.lists.button`**
-  Adds button to the event card on the /events/ page.
-
-  If is present, mush have both `url` and `text` set. If the whole `button`
-  block is skipped, the button is not added to the event card.
-
-  Can also have optional parameter `url_parameters`. If provided, they will be
-  added to the url after the '?' sign.
-
-  Example:
-
-  ```yaml
-  params:
-    ...
-    render:
-      lists:
-        button:
-          url: 'mailto:cfp@csaf.io'
-          text: 'Submit Your Proposal'
-          url_parameters: subject=[CSAF Community Days 2025][Presentation Proposal]<Presentation Title>
-  ```
-
-  **Output:** button with url
-
-  ```
-  mailto:cfp@csaf.io?subject=[CSAF Community Days 2025][Presentation Proposal]<Presentation Title>
-  ```
 
 ---
 
