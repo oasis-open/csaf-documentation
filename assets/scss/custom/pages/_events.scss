@@ -44,7 +44,7 @@
     width: 100%;
     margin-top: auto;
 
-    @include media-breakpoint-down(md)  {
+    @include media-breakpoint-down(md) {
       padding-inline: 16px;
       padding-top: 16px;
     }
@@ -54,7 +54,7 @@
       padding-bottom: 8px;
     }
 
-    @include media-breakpoint-up(lg)  {
+    @include media-breakpoint-up(lg) {
       padding-inline: 16px;
       padding-bottom: 16px;
     }
@@ -62,6 +62,10 @@
 
   .card-body {
     padding: 1rem;
+
+    .card-subtitle {
+      font-size: calc(1.05rem + 0.25vw);
+    }
   }
 
   .card-title {
@@ -84,6 +88,11 @@
       background-size: 100% 1px;
     }
   }
+}
+
+.event-card-btn {
+  z-index: 2;
+  width: max-content;
 }
 
 .event-mini-card {
@@ -111,7 +120,15 @@
 
   :first-child {
     &:is(h1, h2, h3, h4) {
-    margin-top: 0;
+      margin-top: 0;
     }
+  }
+
+  h3 {
+    color: $blue-600;
+  }
+
+  .btn {
+    font-size: calc(1rem + 0.25vw);
   }
 }

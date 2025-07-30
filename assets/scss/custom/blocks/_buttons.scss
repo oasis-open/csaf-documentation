@@ -1,5 +1,9 @@
 .btn {
   transition: $transition-fast;
+
+  &-xs {
+    font-size: 1.1rem;
+  }
 }
 
 .btn-outline-primary {

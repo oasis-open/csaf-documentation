@@ -13,6 +13,7 @@ visit the [OASIS CSAF Technical Committee](https://www.oasis-open.org/committees
 
 Also see [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md)
 and [LICENSE.md](LICENSE.md).
+
 ---
 
 ## Deployment
@@ -47,32 +48,32 @@ Before starting the development server, ensure you have the following installed:
 - **Hugo** (v0.145.0 or later, extended edition):
   Required for generating the static website from the source code files.
 
-    - Check if Hugo is installedby running `hugo version` in the terminal.
+  - Check if Hugo is installed, by running `hugo version` in the terminal.
 
-    - [Install Hugo](https://gohugo.io/getting-started/installing/) if necessary.
+  - [Install Hugo](https://gohugo.io/getting-started/installing/) if necessary.
 
 - **Git**: Required to clone the repository.
 
-    - Check if Git is installed by running ```git --version```
-      in the terminal.
+  - Check if Git is installed by running `git --version`
+    in the terminal.
 
-    - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if necessary.
+  - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if necessary.
 
 - **Node.js** (v20+) and **npm** (v10.8.2+, installed by default together with Node.js 20+):
   Required for managing project dependencies,
   such as the Bootstrap framework used for styling the pages.
 
-    - Check if Node.js and npm are installed by running `node -v` and
-      `npm -v` in the terminal.
+  - Check if Node.js and npm are installed by running `node -v` and
+    `npm -v` in the terminal.
 
-    - [Install Node.js and npm](https://nodejs.org/) if necessary.
+  - [Install Node.js and npm](https://nodejs.org/) if necessary.
 
 ### 1. Pull the Repository
 
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/csaf-auxiliary/csaf-website-relaunch.git
+git clone https://github.com/oasis-open/csaf-documentation/main/README-repo.md.git
 ```
 
 ### 2. Install Dependencies
@@ -84,6 +85,7 @@ cd your-repository-name
 ```
 
 Install project dependencies, including the Bootstrap framework:
+
 ```bash
 npm install
 ```
@@ -97,6 +99,13 @@ hugo server -D
 '-D' flag allows to include the draft pages to the build.
 
 The site will be accessible at http://localhost:1313/.
+
+If styles are not rendered correctly (for example the fonts are different from
+the published page), start the server with binding:
+
+```bash
+hugo server -D --bind 127.0.0.1 --baseURL http://127.0.0.1:1313
+```
 
 ---
 
@@ -137,14 +146,14 @@ The `hugo.toml` file contains the main configuration settings for the Hugo proje
 - **title**: The title of the website.
 
 - **disableKinds**: Specifies which kinds of content to disable.
-   The page types required for generating list-pages are disabled.
+  The page types required for generating list-pages are disabled.
 
 - **baseUrl**: Specifies the root URL of your site,
-    which is used as the base for all relative links.
+  which is used as the base for all relative links.
 
 - **canonifyURLs**: When set to true, allows Hugo to add baseUrl
-to the relative links.
-At this stage is needed to handle base url that is not the site root.
+  to the relative links.
+  At this stage is needed to handle base url that is not the site root.
 
 ### Markup Settings
 
@@ -181,6 +190,8 @@ For processing the text, the following settings are applied:
 - [Presentations](/docs/presentations.md)
 
 - [Events](/docs/events.md)
+
+- [Shared components](/docs/shared.md) (Header)
 
 ---
 

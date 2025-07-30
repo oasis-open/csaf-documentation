@@ -1,5 +1,6 @@
 ---
 title: '{{ replace .Name "-" " " | title }}'
+subtitle: ''
 weight: 1
 type: 'event'
 draft: true
@@ -9,7 +10,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: {{ replace .Name "-" " " | title }}
+    year: { { replace .Name "-" " " | title } }
   render:
     lists:
       display_in_lists: true
@@ -18,9 +19,10 @@ params:
       preview: ''
       header: ''
 ---
-`Note:`
+
+`⚠️ Note:`
 
 `This message is only for editors. Delete this block before publishing the page.`
 
-` To learn how to customize and style an event page, please see the instructions in the README file: `
-https://github.com/csaf-auxiliary/csaf-website-relaunch#add-a-page-for-the-event
+`To learn how to customize and style an event page, please see the instructions in the`
+[README file](/README-repo.md#add-a-page-for-the-event)

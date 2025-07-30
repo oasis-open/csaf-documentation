@@ -1,6 +1,7 @@
 ---
 title: 'Workshops'
 type: 'event'
+layout: 'events'
 draft: false
 ---
 <!--

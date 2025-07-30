@@ -1,5 +1,6 @@
 ---
 title: 'Workshop {{ replace .Name "-" " " | title }}'
+subtitle: ''
 weight: 1
 type: 'event'
 draft: true
@@ -9,7 +10,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: {{ .Name }}
+    year: { { .Name } }
   render:
     lists:
       display_in_lists: true
@@ -18,12 +19,15 @@ params:
       preview: '/events/default/workshop_list.png'
       header: ''
 ---
-`Note:`
+
+`⚠️ Note:`
 
 `This message is only for editors. Delete this block before publishing the page.`
 
-` To learn how to customize and style an event page, please see the instructions in the README file: `
-https://github.com/csaf-auxiliary/csaf-website-relaunch#add-a-page-for-the-event
+`Values in backticks below (dates and location) are the placeholders. Update them and remove the backsticks before publishing.`
+
+`To learn how to customize and style an event page, please see the instructions in the`
+[README file](/README-repo.md#add-a-page-for-the-event)
 
 {{< register-button >}}
 
@@ -40,9 +44,9 @@ Markdown text.
 {{< event-timetable >}}
 **Workshop 1:**
 
-09.12.2024 13:30-18:00 (Part 1)
+`09.12.{{ .Name }} 13:30-18:00` (Part 1)
 
-10.12.2024 08:00-12:30 (Part 2)
+`10.12.{{ .Name }} 08:00-12:30` (Part 2)
 
 (limited to 40 participants)
 {{< /event-timetable >}}
