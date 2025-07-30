@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $pages := slice }}
+
+{{ range .Pages }}
+  {{ if .Params.render.lists.display_in_lists }}
+    {{ $pages = $pages | append . }}
+  {{ end }}
+{{ end }}
+
+<main class="md">
+  <div class="container my-5">
+    {{ .Content }}
+    <h2>{{ .Title }}</h2>
+    {{ partial "pages/events/list-with-mini-cards.html" $pages }}
+  </div>
+</main>
+{{ end }}

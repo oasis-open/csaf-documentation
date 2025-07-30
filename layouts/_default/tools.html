@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main>
+  <!-- #region: Title -->
+  <section class="blue-gradient">
+    <div class="container">
+      <h1 class="py-10 fw-normal">{{ .Title }}</h1>
+    </div>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region: Cards -->
+  <div class="container py-5">
+    <div class="row g-4">
+      {{ .Content }}
+    </div>
+  </div>
+  <!-- #endregion -->
+</main>
+{{ end }}

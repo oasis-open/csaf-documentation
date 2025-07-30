@@ -1,0 +1,39 @@
+{{ $md      := .Inner }}
+{{ $pattern := `!\[([^\]]*)\]\(([^)]+)\)` }}
+{{ $matches := findRE $pattern $md }}
+
+<div class="row align-items-center flex-lg-row-reverse gx-0">
+  {{ if gt (len $matches) 0 }}
+    <div class="col-12 col-lg-6 px-0 mb-2 mb-lg-0">
+      <div class="image-wrapper">
+        {{ $imgMd := index $matches 0 }}
+        {{ $alt   := replaceRE $pattern "$1" $imgMd }}
+        {{ $src   := replaceRE $pattern "$2" $imgMd }}
+        {{ if and (ne $alt "") (ne $src "") }}
+          <img src="{{ $src }}" alt="{{ $alt }}">
+        {{ else }}
+          <p class="text-danger">
+            ⚠️ Invalid image format. Ensure the Markdown syntax for the image is correct:
+            <code>![alt text](image-url)</code>.
+          </p>
+        {{ end }}
+      </div>
+    </div>
+  {{ else }}
+    <p class="text-danger">
+      ⚠️ No valid image found. Please add an image in the following format:
+      <code>![alt text](image-url)</code>.
+    </p>
+  {{ end }}
+
+  <div class="col-12 col-lg-6">
+    <div class="text-wrapper">
+      {{ if gt (len $matches) 0 }}
+        {{ $rest := replaceRE $pattern "" $md }}
+        {{ $rest | markdownify }}
+      {{ else }}
+        {{ $md | markdownify }}
+      {{ end }}
+    </div>
+  </div>
+</div>

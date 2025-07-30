@@ -1,0 +1,7 @@
+{{ $email := .Get "email" | default "csaf@bsi.bund.de" }}
+{{ $text  := .Get "text"  | default "Register Now" }}
+
+<div class="col-12 col-md">
+  <a class="btn btn-primary btn-sm-100 py-2 px-4 mb-2 mb-lg-3"
+     href="mailto:{{ $email }}">{{ $text }}</a>
+</div>

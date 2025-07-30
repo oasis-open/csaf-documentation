@@ -1,0 +1,63 @@
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
+
+$font-family-base: 'Darker Grotesque', Arial, Helvetica, sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+$h1-font-size: 7rem;
+$h2-font-size: 4.5rem;
+$h3-font-size: 2.75rem;
+$font-size-base: 1.5rem;
+
+$transition-slow: all 0.35s ease-in-out;
+$transition-fast: all 0.23s ease-in-out;
+
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6.5,
+  9: $spacer * 8,
+  10: $spacer * 10,
+);
+
+$blue-800: #13294b;
+$blue-600: #1d3f74;
+$blue-400: #0053a1;
+$blue-350: #0060bb;
+$blue-100: #e0f2fe;
+$gray-900: #25292c;
+$gray-800: #363c40;
+$gray-600: #6c757d;
+$gray-400: #ced4da;
+$gray-100: #f8f9fa;
+$orange:   #ce681f;
+$muted:    #426e97;
+
+$primary:       $blue-600;
+$secondary:     $blue-400;
+$link-hover:    $blue-350;
+$tertiary:      $gray-600;
+$light:         $gray-100;
+$accent:        $orange;
+$muted:         $muted;
+
+$theme-colors: (
+  'primary':    $primary,
+  'secondary':  $secondary,
+  'tertiary':   $tertiary,
+  'light':      $light,
+  'accent':     $accent,
+  'muted':      $muted,
+);

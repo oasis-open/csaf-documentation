@@ -1,0 +1,21 @@
+<li class="text-primary">
+  {{ $href := cond .link.external .link.url (.link.url | relURL) }}
+
+  {{ if .link.external }}
+    <a href="{{ $href }}" class="nav-link" rel="noopener noreferrer">
+      {{ .link.label }}
+    </a>
+  {{ else }}
+    {{ $currentPage := .page.RelPermalink | relURL }}
+
+    {{ if eq $href $currentPage }}
+      <div class="nav-link nav-link--active">
+        <span>{{ .link.label }}</span>
+      </div>
+    {{ else }}
+      <a href="{{ $href }}" class="nav-link">
+        {{ .link.label }}
+      </a>
+    {{ end }}
+  {{ end }}
+</li>

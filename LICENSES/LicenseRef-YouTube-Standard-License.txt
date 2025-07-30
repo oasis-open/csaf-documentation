@@ -1,0 +1,43 @@
+LicenseRef-YouTube-Standard-License
+
+This license applies to content distributed under YouTube’s Standard License.
+
+The full terms of this license can be found at:
+https://www.youtube.com/t/terms
+
+Terms and Conditions:
+1. Usage Rights:
+You are granted the right to view, stream, and share the video content via 
+YouTube’s platform or embedded on other platforms using YouTube’s provided 
+embedding features. This content can be shared publicly or privately in line 
+with YouTube's sharing features.
+
+2. No Redistribution:
+You are not allowed to download or redistribute the content unless explicitly 
+permitted by the content owner or unless the content is otherwise made 
+available for download by YouTube (e.g., YouTube Premium).
+
+3. No Modification:
+You are not allowed to alter, modify, or create derivative works based on the 
+content, unless the content owner has granted permission or as allowed by 
+applicable fair use law.
+
+4. Commercial Use:
+For most videos under the Standard YouTube License, the content is not 
+available for commercial use. You must not use the content in any product or 
+service for sale, nor for promotional purposes, unless granted explicit 
+permission from the content owner.
+
+5. Copyright:
+All rights are reserved by the content creator or YouTube. Unauthorized use may 
+result in removal of the video or legal actions.
+
+6. No Warranty:
+YouTube and the content creator provide the content "as-is" and make no 
+warranties or representations regarding the accuracy, legality, or quality of 
+the content.
+
+7. Attribution:
+In some cases, attribution to the original creator is required. YouTube will 
+usually indicate if attribution is necessary. Always respect the copyright and 
+provide proper credit as specified by the creator.

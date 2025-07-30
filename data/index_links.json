@@ -1,0 +1,26 @@
+[
+    {
+        "url": "https://github.com/oasis-tcs/csaf",
+        "label": "Access Our GitHub Repo",
+        "external": true,
+        "icon": "github.svg"
+    },
+    {
+        "url": "tools/",
+        "label": "Open Source Tools",
+        "external": false,
+        "icon": "rocket.svg"
+    },
+    {
+        "url": "presentations/",
+        "label": "CSAF Presentations",
+        "external": false,
+        "icon": "presentation-play.svg"
+    },
+    {
+        "url": "https://wid.cert-bund.de/.well-known/csaf-aggregator/aggregator.json",
+        "label": "BSI CSAF Lister",
+        "external": true,
+        "icon": "lister.svg"
+    }
+]

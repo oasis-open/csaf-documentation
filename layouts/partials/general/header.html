@@ -1,0 +1,43 @@
+<header class="sticky-top bg-light shadow-sm">
+  <nav class="navbar mx-auto p-0 w-100">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <!-- #region: Logo -->
+      {{- if eq .RelPermalink "/" }}
+        <div class="p-0 logo-container">
+          {{- $svgPath := "icons/logo.svg" -}}
+          {{- $svgContent := readFile (printf "static/%s" $svgPath) | safeHTML -}}
+          {{- $svgContent -}}
+        </div>
+      {{- else }}
+        <a href="/" class="p-0 logo-container">
+          {{- $svgPath := "icons/logo.svg" -}}
+          {{- $svgContent := readFile (printf "static/%s" $svgPath) | safeHTML -}}
+          {{- $svgContent -}}
+        </a>
+      {{- end }}
+      <!-- #endregion -->
+
+      <!-- #region: Desktop menu -->
+      <div class="d-none d-lg-flex align-items-center">
+        {{ partial "general/navbar-links.html" . }}
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region: Toggler collapsible menu -->
+      <div class="d-lg-none">
+        <input type="checkbox" id="nav-toggle" class="d-none">
+        <label for="nav-toggle" class="navbar__toggler">
+          <span></span>
+        </label>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region: Mobile collapsible menu -->
+    <div class="navbar__menu-mobile d-lg-none bg-light">
+      {{ partial "general/navbar-links.html" . }}
+    </div>
+    <!-- #endregion -->
+  </nav>
+</header>
+{{ partial "general/highlighted-link.html" . }}

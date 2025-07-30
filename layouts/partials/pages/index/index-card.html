@@ -1,0 +1,5 @@
+{{ $href := cond .external .url (.url | relURL) }}
+<a href="{{ $href }}" class="index-card" {{ if .external }}rel="noopener noreferrer"{{ end }}>
+  {{ partial "general/icon.html" (dict "name" .icon "class" "index-card__icon") }}
+  <div><span class="index-card__label fs-6 d-inline">{{ .label }}</span></div>
+</a>

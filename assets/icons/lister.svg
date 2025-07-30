@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path
+    fill="none"
+    stroke="currentColor"
+    stroke-linecap="square"
+    stroke-width="1.5"
+    d="M20 7H4
+       M11 11H4
+       M20 15H4
+       M11 19H4"  />
+</svg>

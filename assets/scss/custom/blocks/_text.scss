@@ -1,0 +1,13 @@
+.paragraph-accent {
+  border-left: 3px solid $accent;
+  padding-left: calc(0.5rem + 0.75vw);
+}
+
+.ws-timetable {
+  margin-block: 24px;
+  font-size: 1.25rem;
+
+  p {
+    margin-bottom: 0.25rem;
+  }
+}

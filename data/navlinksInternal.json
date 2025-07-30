@@ -1,0 +1,22 @@
+[
+    {
+        "url": "/specification/",
+        "label": "Specification",
+        "external": false
+    },
+    {
+        "url": "/presentations/",
+        "label": "Presentations",
+        "external": false
+    },
+    {
+        "url": "/events/",
+        "label": "Events",
+        "external": false
+    },
+    {
+        "url": "/tools/",
+        "label": "Tools",
+        "external": false
+    }
+]

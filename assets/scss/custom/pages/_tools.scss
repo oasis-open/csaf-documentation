@@ -1,0 +1,19 @@
+.tool-card {
+  border: 0;
+  border-bottom: 2px solid $muted;
+}
+
+.card-body {
+  h3 {
+    a {
+      @extend .animated-underline--accent;
+      font-weight: 500;
+      color: $accent;
+      transition: $transition-fast;
+    }
+  }
+
+  p {
+    line-height: 1.25;
+  }
+}

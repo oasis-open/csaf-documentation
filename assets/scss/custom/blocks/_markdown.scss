@@ -1,0 +1,105 @@
+/**
+ * Override element styles and bootstrap classes
+ * on pages rendered directly from markdown by Hugo
+ */
+.md {
+  font-family: 'Manrope', sans-serif;
+  font-size: calc(0.85rem + 0.25vw);
+
+  .container {
+    > :first-child {
+      &:is(h1, h2, h3, h4) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  h1 {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    font-size: calc(2rem + 1.8vw);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 1.8rem;
+      margin-bottom: 0.9rem;
+    }
+  }
+
+  h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    font-size: calc(1.35rem + 1.2vw);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 1.4rem;
+      margin-bottom: 0.7rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 1.7rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-size: calc(1rem + 0.75vw);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0.9rem;
+      margin-bottom: 0.6rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    font-size: calc(0.7rem + 0.5vw);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  thead th {
+    background-color: $blue-350;
+    color: #ececec;
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 2px solid #dee2e6;
+  }
+
+  tbody td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  tbody tr:nth-of-type(odd) {
+    background-color: $light;
+  }
+}
