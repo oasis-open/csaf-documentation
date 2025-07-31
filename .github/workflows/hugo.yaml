@@ -52,7 +52,7 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           TZ: Europe/Berlin
-        run: hugo --gc --minify --baseURL "https://www.csaf.dev"
+        run: hugo --gc --minify --baseURL "https://csaf.io"
 
       - name: Remove .license files from 'public' folder
         run: find public -type f -name "*.license" -exec rm -f {} \;
