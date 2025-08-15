@@ -84,7 +84,7 @@ Navigate into the project directory:
 cd your-repository-name
 ```
 
-Install project dependencies, including the Bootstrap framework:
+Install project dependencies, including the Bootstrap framework and local development tools:
 
 ```bash
 npm install
@@ -92,22 +92,39 @@ npm install
 
 ### 3. Start the Development Server
 
+You can run the site locally in two different ways depending on your needs.
+
+#### Option A — Hugo’s built-in dev server (fast live reload)
+
 ```bash
-hugo server -D
+hugo server -D --bind 127.0.0.1 --baseURL http://127.0.0.1:1414 --port 1414
 ```
 
 '-D' flag allows to include the draft pages to the build.
 
-The site will be accessible at http://localhost:1313/.
+**Pros:** Fast, auto-reloads browser when files change.
 
-If styles are not rendered correctly (for example the fonts are different from
-the published page), start the server with binding:
+**Cons:** When you visit a wrong URL, the 404 page will appear as raw HTML (unstyled).
+
+Use this when you need quick iteration speed and don’t care about testing the 404 page locally.
+
+#### Option B — Build + serve (accurate 404 rendering)
 
 ```bash
-hugo server -D --bind 127.0.0.1 --baseURL http://127.0.0.1:1313
+npm run dev
 ```
 
----
+**Pros:** Shows styled 404 page exactly like GitHub Pages, serves real build output.
+
+**Cons:** No automatic browser reload (refresh manually), slightly slower rebuilds.
+
+Use this when you want to test the exact production output, especially the 404 page.
+
+### 4. View site locally
+
+In both options the site will be accessible at:
+
+http://127.0.0.1:1414/
 
 ## Directory structure
 
