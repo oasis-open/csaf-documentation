@@ -11,6 +11,52 @@
       padding-bottom: 0.2rem;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin-bottom: 12px;
+      border: 1px solid #ddd;
+    }
+
+    td {
+      border: none;
+      position: relative;
+      padding-block: 4px 6px;
+      padding-left: 30%;
+      padding-right: 6px;
+    }
+
+    td[data-is-empty='true'] {
+      display: none;
+    }
+
+    td:before {
+      position: absolute;
+      left: 6px;
+      width: 25%;
+      content: attr(data-label) ':';
+      font-weight: bold;
+    }
+
+    .tlp {
+      margin: 0;
+    }
+  }
 }
 
 .session-card {

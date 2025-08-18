@@ -13,3 +13,5 @@ canonifyURLs = "true"
     [markup.goldmark.parser]
       autoHeadingID = true
       autoHeadingIDType = "github"
+			[markup.goldmark.parser.attribute]
+					block = true

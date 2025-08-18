@@ -5,9 +5,11 @@
     {{- end }}
   {{- end }}>
   <thead>
+    {{- $headers := slice }}
     {{- range .THead }}
       <tr>
         {{- range . }}
+          {{- $headers = $headers | append .Text }}
           <th
             {{- with .Alignment }}
               {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr }}
@@ -22,13 +24,19 @@
   <tbody>
     {{- range .TBody }}
       <tr>
-        {{- range . }}
+        {{- range $i, $cell := . }}
           <td
-            {{- with .Alignment }}
+            {{- with $cell.Alignment }}
               {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr }}
-            {{- end -}}
+            {{- end }}
+            {{- with index $headers $i }}
+              data-label="{{ . }}"
+            {{- end }}
+            {{- if eq $cell.Text "" }}
+              data-is-empty="true"
+            {{- end }}
           >
-            {{- .Text -}}
+            {{- $cell.Text -}}
           </td>
         {{- end }}
       </tr>
