@@ -4,6 +4,13 @@
       display: block;
     }
   }
+
+  .tlp {
+    @include media-breakpoint-down(md) {
+      font-size: 11px;
+      padding-bottom: 0.2rem;
+    }
+  }
 }
 
 .session-card {
