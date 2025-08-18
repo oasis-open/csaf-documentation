@@ -100,12 +100,20 @@ hugo server -D
 
 The site will be accessible at http://localhost:1313/.
 
+### 4. Resolving rendering issues
+
 If styles are not rendered correctly (for example the fonts are different from
 the published page), start the server with binding:
 
 ```bash
 hugo server -D --bind 127.0.0.1 --baseURL http://127.0.0.1:1313
 ```
+
+By default 404-page is rendered in the development mode as raw html. This issue
+does not affect the site deployed in the production mode.
+
+If page 404 must be checked in the development mode,
+it can be accessed directly at http://127.0.0.1:1313/404.html.
 
 ---
 
