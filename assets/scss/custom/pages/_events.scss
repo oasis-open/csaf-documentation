@@ -132,3 +132,19 @@
     font-size: calc(1rem + 0.25vw);
   }
 }
+
+.event-container {
+  margin-inline: auto;
+
+  @include media-breakpoint-up(xl) {
+    width: 80%;
+  }
+
+  @include media-breakpoint-between(md, xl) {
+    width: 90%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 92%;
+  }
+}
