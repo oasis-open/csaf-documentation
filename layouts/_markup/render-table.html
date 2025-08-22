@@ -1,0 +1,45 @@
+<table
+  {{- range $k, $v := .Attributes }}
+    {{- if $v }}
+      {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+    {{- end }}
+  {{- end }}>
+  <thead>
+    {{- $headers := slice }}
+    {{- range .THead }}
+      <tr>
+        {{- range . }}
+          {{- $headers = $headers | append .Text }}
+          <th
+            {{- with .Alignment }}
+              {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr }}
+            {{- end -}}
+          >
+            {{- .Text -}}
+          </th>
+        {{- end }}
+      </tr>
+    {{- end }}
+  </thead>
+  <tbody>
+    {{- range .TBody }}
+      <tr>
+        {{- range $i, $cell := . }}
+          <td
+            {{- with $cell.Alignment }}
+              {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr }}
+            {{- end }}
+            {{- with index $headers $i }}
+              data-label="{{ . }}"
+            {{- end }}
+            {{- if eq $cell.Text "" }}
+              data-is-empty="true"
+            {{- end }}
+          >
+            {{- $cell.Text -}}
+          </td>
+        {{- end }}
+      </tr>
+    {{- end }}
+  </tbody>
+</table>
