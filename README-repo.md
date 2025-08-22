@@ -71,7 +71,6 @@ or following the generic instruction).
 
   - [Install Node.js and npm](https://nodejs.org/) if necessary.
 
-
 ### 1. Pull the Repository
 
 Clone the repository to your local machine using Git,
@@ -81,7 +80,6 @@ you are working to find out which is _Your-Repository-Link_:
 ```bash
 git clone Your-Repository-Link
 ```
-
 
 ### 2. Install Dependencies
 
@@ -100,13 +98,14 @@ npm install
 ```bash
 hugo server -D
 ```
+
 Check the output of the command, by default, the site will be accessible
 by default at http://localhost:1313/ (which is the _baseURL_).
 
 '-D' flag allows to include the draft pages to the build.
 Leave it out, if you want to see pages like the production mode will show them.
 
-#### 4. rendering quirks
+#### 4. Rendering quirks
 
 The development server will not do full redirects on missed pages.
 (This is a known problem with
@@ -140,7 +139,6 @@ Check how the static site is build in the github workflow
 
 It means calling `hugo` (an alias for `hugo build`) with similar options
 and you get the site files in `public/`.
-
 
 ---
 
