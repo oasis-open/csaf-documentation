@@ -18,6 +18,18 @@
   }
 }
 
+.btn-outline-muted {
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible,
+  &:target {
+    background-color: lighten($muted, 53%) !important;
+    color: $muted !important;
+    background: none;
+  }
+}
+
 .btn-sm-100 {
   @include media-breakpoint-down(md) {
     display: block;
