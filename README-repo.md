@@ -105,7 +105,7 @@ by default at http://localhost:1313/ (which is the _baseURL_).
 '-D' flag allows to include the draft pages to the build.
 Leave it out, if you want to see pages like the production mode will show them.
 
-#### 4. Rendering quirks
+#### 4. Rendering Quirks
 
 The development server will not do full redirects on missed pages.
 (This is a known problem with
