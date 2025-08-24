@@ -142,7 +142,7 @@ and you get the site files in `public/`.
 
 ---
 
-## Directory structure
+## Directory Structure
 
 - **assets**: Contains the files that are being pre-processed
   (.scss files compiled into .css)
