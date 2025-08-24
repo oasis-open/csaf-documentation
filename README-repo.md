@@ -37,7 +37,7 @@ No manual deployment is required. Changes go live once reviewed and merged.
 
 ---
 
-## Development setup
+## Development Setup
 
 When doing changes to the website, you can use a local setup
 on a GNU/Linux machine to preview the layout.
