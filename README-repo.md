@@ -74,7 +74,7 @@ or following the generic instruction).
 ### 1. Pull the Repository
 
 Clone the repository to your local machine using Git,
-use the "<> Code" -> "Clone" information on the github repository
+use the "<> Code" -> "Clone" information on the GitHub repository
 you are working to find out which is _Your-Repository-Link_:
 
 ```bash
