@@ -132,7 +132,7 @@ hugo server -D --baseURL http://localhost:7000
 Try `--disableFastRender` as option if some changes did not make
 the reload, e.g. in the `.scss` files.
 
-#### 5. build the static site
+#### 5. Build the Static Site
 
 Check how the static site is build in the github workflow
 `.github/workflows/hugo.yaml` file.
