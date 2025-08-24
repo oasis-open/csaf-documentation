@@ -93,7 +93,7 @@ Install project dependencies, including the Bootstrap framework:
 npm install
 ```
 
-### 3. Development server with live reload
+### 3. Development Server with live Reload
 
 ```bash
 hugo server -D
