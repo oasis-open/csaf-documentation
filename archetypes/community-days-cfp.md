@@ -10,7 +10,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: { { .Name } }
+    year: {{ .Name }}
   render:
     lists:
       display_in_lists: true
