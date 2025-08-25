@@ -152,7 +152,7 @@ You can either start with a ready-to-use template or create a blank page.
 
     Example:
 
-    ```
+    ```yaml
     params:
       event:
         ...
