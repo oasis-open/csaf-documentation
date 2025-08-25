@@ -81,6 +81,12 @@
     line-height: 1.15;
     font-weight: bold;
 
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: inline-block;
+    max-width: 100%;
+
     @extend .hidden-underline--secondary;
   }
 

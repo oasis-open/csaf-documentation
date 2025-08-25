@@ -37,13 +37,16 @@ No manual deployment is required. Changes go live once reviewed and merged.
 
 ---
 
-## Development server (with live reload)
+## Development Setup
 
-To run the Hugo development server with live reload, follow these steps:
+When doing changes to the website, you can use a local setup
+on a GNU/Linux machine to preview the layout.
 
 ### Prerequisites
 
-Before starting the development server, ensure you have the following installed:
+Install the following:
+(either from your GNU/Linux distribution packages
+or following the generic instruction).
 
 - **Hugo** (v0.145.0 or later, extended edition):
   Required for generating the static website from the source code files.
@@ -70,18 +73,18 @@ Before starting the development server, ensure you have the following installed:
 
 ### 1. Pull the Repository
 
-Clone the repository to your local machine using Git:
+Clone the repository to your local machine using Git,
+use the "<> Code" -> "Clone" information on the GitHub repository
+you are working to find out which is _Your-Repository-Link_:
 
 ```bash
-git clone https://github.com/oasis-open/csaf-documentation/main/README-repo.md.git
+git clone Your-Repository-Link
 ```
 
 ### 2. Install Dependencies
 
-Navigate into the project directory:
-
 ```bash
-cd your-repository-name
+cd Your-Repository-Name
 ```
 
 Install project dependencies, including the Bootstrap framework:
@@ -90,26 +93,56 @@ Install project dependencies, including the Bootstrap framework:
 npm install
 ```
 
-### 3. Start the Development Server
+### 3. Development Server with live Reload
 
 ```bash
 hugo server -D
 ```
 
-'-D' flag allows to include the draft pages to the build.
+Check the output of the command, by default, the site will be accessible
+by default at http://localhost:1313/ (which is the _baseURL_).
 
-The site will be accessible at http://localhost:1313/.
+'-D' flag allows to include the draft pages to the build.
+Leave it out, if you want to see pages like the production mode will show them.
+
+#### 4. Rendering Quirks
+
+The development server will not do full redirects on missed pages.
+(This is a known problem with
+hugo [#874](https://github.com/gohugoio/hugo/issues/874)
+and does not affect the production site).
+To check the 404 pages with the development mode,
+you can directly point your browser to _baseURL_/404.html.
 
 If styles are not rendered correctly (for example the fonts are different from
-the published page), start the server with binding:
+the published page), you may be in the situation that port and
+domain or IP address under which you are accessing the development
+server do not match what the webpages are configured with.
+(You can diagnose the situation when reloading the site with the
+browsers development tools' network tab running. The first requests
+will be to your URL given in the browser, but subsequent requests
+to the _baseURL_ it gets from the server.)
+
+In this situation you can give the correct _baseURL_ to hugo, e.g.
 
 ```bash
-hugo server -D --bind 127.0.0.1 --baseURL http://127.0.0.1:1313
+hugo server -D --baseURL http://localhost:7000
 ```
+
+Try `--disableFastRender` as option if some changes did not make
+the reload, e.g. in the `.scss` files.
+
+#### 5. Build the Static Site
+
+Check how the static site is build in the github workflow
+`.github/workflows/hugo.yaml` file.
+
+It means calling `hugo` (an alias for `hugo build`) with similar options
+and you get the site files in `public/`.
 
 ---
 
-## Directory structure
+## Directory Structure
 
 - **assets**: Contains the files that are being pre-processed
   (.scss files compiled into .css)

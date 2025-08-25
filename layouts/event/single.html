@@ -3,7 +3,7 @@
   <!-- #region: Title -->
   {{ $bg := .Params.render.images.header }}
   <section {{ if $bg }}style="background: url('{{ $bg }}') no-repeat center/cover;"{{ else }}class="blue-gradient"{{ end }}>
-    <div class="w-80 d-flex flex-column gap-2 py-7 py-lg-9 fw-normal text-white">
+    <div class="event-container d-flex flex-column gap-2 py-7 py-lg-9 fw-normal text-white">
       <h1>{{ .Title }}</h1>
       {{ with .Params.subtitle }}
         <h2 class="mt-2">{{ . }}</h2>
@@ -53,7 +53,7 @@
   <!-- #endregion -->
 
   <!-- #region: Content -->
-  <section class="event-description w-80 py-4 py-xl-5 px-4 px-lg-5 bg-white">
+  <section class="event-container event-description py-4 py-xl-5 px-4 px-lg-5 bg-white">
     {{ .Content }}
   </section>
   <!-- #endregion -->
