@@ -151,9 +151,11 @@ You can either start with a ready-to-use template or create a blank page.
     and is not surounded by apostrophes.
 
     Example:
+
     ```
     params:
       event:
+        ...
         year: 2025
     ```
 
