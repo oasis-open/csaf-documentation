@@ -18,6 +18,18 @@
   }
 }
 
+.btn-outline-secondary {
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible,
+  &:target {
+    background-color: lighten($secondary, 62%) !important;
+    color: $secondary !important;
+    background: none;
+  }
+}
+
 .btn-sm-100 {
   @include media-breakpoint-down(md) {
     display: block;
