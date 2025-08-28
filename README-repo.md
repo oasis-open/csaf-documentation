@@ -31,13 +31,13 @@ The website is built and deployed automatically via GitHub Actions.
 - Deployments can also be triggered manually from the **GitHub Actions** tab.
 
 - The latest version is published at
-  [GitHub Pages](https://csaf-auxiliary.github.io/csaf-website-relaunch).
+  [GitHub Pages](https://csaf.io).
 
 No manual deployment is required. Changes go live once reviewed and merged.
 
 ---
 
-## Development setup
+## Development Setup
 
 When doing changes to the website, you can use a local setup
 on a GNU/Linux machine to preview the layout.
@@ -74,7 +74,7 @@ or following the generic instruction).
 ### 1. Pull the Repository
 
 Clone the repository to your local machine using Git,
-use the "<> Code" -> "Clone" information on the github repository
+use the "<> Code" -> "Clone" information on the GitHub repository
 you are working to find out which is _Your-Repository-Link_:
 
 ```bash
@@ -93,7 +93,7 @@ Install project dependencies, including the Bootstrap framework:
 npm install
 ```
 
-### 3. Development server with live reload
+### 3. Development Server with live Reload
 
 ```bash
 hugo server -D
@@ -105,7 +105,7 @@ by default at http://localhost:1313/ (which is the _baseURL_).
 '-D' flag allows to include the draft pages to the build.
 Leave it out, if you want to see pages like the production mode will show them.
 
-#### 4. Rendering quirks
+#### 4. Rendering Quirks
 
 The development server will not do full redirects on missed pages.
 (This is a known problem with
@@ -132,7 +132,7 @@ hugo server -D --baseURL http://localhost:7000
 Try `--disableFastRender` as option if some changes did not make
 the reload, e.g. in the `.scss` files.
 
-#### 5. build the static site
+#### 5. Build the Static Site
 
 Check how the static site is build in the github workflow
 `.github/workflows/hugo.yaml` file.
@@ -142,7 +142,7 @@ and you get the site files in `public/`.
 
 ---
 
-## Directory structure
+## Directory Structure
 
 - **assets**: Contains the files that are being pre-processed
   (.scss files compiled into .css)
