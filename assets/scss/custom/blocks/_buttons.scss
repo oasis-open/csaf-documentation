@@ -18,14 +18,14 @@
   }
 }
 
-.btn-outline-muted {
+.btn-outline-secondary {
   &:hover,
   &:active,
   &:focus,
   &:focus-visible,
   &:target {
-    background-color: lighten($muted, 53%) !important;
-    color: $muted !important;
+    background-color: lighten($secondary, 62%) !important;
+    color: $secondary !important;
     background: none;
   }
 }

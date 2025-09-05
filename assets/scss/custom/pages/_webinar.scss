@@ -1,0 +1,15 @@
+.webinar-links-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.webinar-link {
+  display: block;
+  width: max-content;
+  color: $secondary;
+
+  @extend .animated-underline--secondary;
+}

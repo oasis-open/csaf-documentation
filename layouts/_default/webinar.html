@@ -3,47 +3,36 @@
   SPDX-SnippetCopyrightText: 2023 OASIS CSAF TC
   SPDX-License-Identifier: LicenseRef-OASIS-CSAF-TC-License
 -->
-<main class="container py-5">
-  <section>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md col-text">
-          <div class="text-wrapper">
-            <h1 class="display-2">Webinar: Using CSAF to Respond to Supply Chain Vulnerabilities at Large Scale</h1>
-            <p class="mb-0 display-7">
-              <a href="https://www.youtube.com/watch?v=z6Psfopy55E" class="text-primary" target="_blank">WEBINAR RECORDING</a><br><br>The Common Security Advisory Framework (CSAF) is a standard to communicate Supply Chain and every-day vulnerabilities in an automated fashion. It therefore leverages the potential of SBOM and implements VEX. CSAF allows for the disclosure of security-related vulnerabilities in software, hardware, and specifications in machine-readable format. It supports automation of the production, distribution, and consumption of security advisories—reducing the time between when vulnerabilities are disclosed and when businesses remediate them. That’s why the U.S. Cybersecurity and Infrastructure Security Agency (CISA)<a href="https://www.cisa.gov/blog/2022/11/10/transforming-vulnerability-management-landscape" class="text-primary" target="_blank"> recently listed the widespread adoption of CSAF as one of “three critical steps to advance the vulnerability management ecosystem.”</a><br><br>In this webinar, members of the OASIS Open Technical Committee that developed CSAF will review the standard and explain its potential impact on vulnerability management. They will also demonstrate how CSAF documents work with Software Bills of Materials (SBOMs) and implement the Vulnerability Exploitability eXchange (VEX) to improve global cybersecurity.<br><br>
-            </p>
-            <div class="btn-container">
-              <div>
-                <a class="btn btn-info display-7" href="/presentations/CSAF_WEBINAR_DEC_2022.pdf" target="_blank">Download the slides!</a>
-                <a class="btn btn-info display-7" href="https://www.youtube.com/watch?v=z6Psfopy55E" target="_blank">RECORDED VIDEO</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 image-wrapper">
-          <a href="#" target="_blank"><img src="/webinar/csaf-vex-471x181.png" alt="CSAF VEX Webinar"></a>
-        </div>
-      </div>
-    </div>
-  </section>
+<main class="event md bg-light">
+  <section class="event-container event-description py-4 py-xl-5 px-4 px-lg-5 bg-white">
+    <!-- #region: Header and image -->
+    <div class="row align-items-center flex-lg-row-reverse gx-0">
 
-  <section>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md col-text">
-          <div class="text-wrapper">
-            <h1 class="display-2">Speakers</h1>
-            <p class="mb-0 display-7">
-              <strong>Thomas Schmidt</strong><br>Subject Matter Expert @German Federal Office for Information Security (BSI)<br>Thomas Schmidt works in the Industrial Automation and Control Systems section of the German Federal Office for Information Security (BSI). His focus is the automation of advisories at both sides: vendors/CERTs and asset owners. Schmidt has been a leader in the OASIS Open CSAF technical committee and key in bridging this work with the CISA SBOM work. To increase the security of ICS and the broader ecosystem, BSI responsibilities cover many areas including establishing trust and good relations with vendors and asset owners. Schmidt completed his master's in IT-Security at Ruhr-University Bochum (Germany) which included a period of research at the SCADA Security Laboratory of Queensland University of Technology (Brisbane, Australia).<br><br><br><strong>Omar Santos</strong><br>Chair, CSAF Technical Committee and Product Security Incident Response Team (PSIRT) - Security Research &amp; Operations @Cisco Systems<br>Omar Santos is an active member of the security community, where he leads several industry-wide initiatives and standard bodies. His active role helps businesses, academic institutions, state and local law enforcement agencies, and other participants that are dedicated to increasing the security of the critical infrastructure. Omar is the author of over 20 books and video courses; numerous white papers, articles, and security configuration guidelines and best practices. Omar is a Principal Engineer of Cisco’s Product Security Incident Response Team (PSIRT) where he mentors and lead engineers and incident managers during the investigation and resolution of security vulnerabilities. Omar has been quoted by numerous media outlets, such as TheRegister, Wired, ZDNet, ThreatPost, CyberScoop, TechCrunch, Fortune Magazine, Ars Technica, and more.<br><br><br><strong>Diane Morris</strong><br>Content Manager for Product Security Incident Response Team @Cisco Systems<br>Diane Morris is a content manager for Cisco’s Product Security Incident Response Team. Her team’s responsibilities include editing and publishing Cisco’s security advisories. Before joining Cisco, Diane worked for multiple non-profit organizations, writing and editing reports on topics like state budget policy, disability rights, and workers’ rights. Her first career out of college was in broadcast journalism, and she worked as a news producer at television stations in Kansas City, Houston, and Raleigh.<br><br><br><strong>Justin Murphy</strong><br>Vulnerability Disclosure Analyst @Cybersecurity and Infrastructure Security Agency (CISA)<br>Justin Murphy is a Vulnerability Disclosure Analyst with the Cybersecurity and Infrastructure Security Agency (CISA). He helps to coordinate the remediation, mitigation, and public disclosure of newly identified cybersecurity vulnerabilities in products and services with affected vendor(s), ranging from industrial control systems (ICS), medical devices, Internet of Things (IoT), and traditional information technology (IT) vulnerabilities. He also assists Dr. Allan Friedman in coordinating the global, multi-stakeholder community-led efforts around software bill of materials (SBOM), and other Technology Assurance related projects at CISA. Justin is a former high school mathematics teacher turned cybersecurity professional and has a M.Sc. in Computer Science from Tennessee Technological University, and a B.Sc. degree in Statistics from the University of Tennessee (Knoxville).
-            </p>
-          </div>
+      <div class="col-12 col-lg-5 px-0 mb-2 mb-lg-0">
+        <div class="image-wrapper">
+          <img src="/events/webinar/csaf-vex-942x362.png" alt="CSAF VEX Webinar">
         </div>
-        <div class="col-12 col-md-6 image-wrapper">
-          <img src="/webinar/webinar-with-mouse-600x184.jpg" alt="CSAF Webinar">
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="text-wrapper">
+          <h1>Webinar: Using CSAF to Respond to Supply Chain Vulnerabilities at Large Scale</h1>
         </div>
       </div>
     </div>
+    <!-- #endregion -->
+    {{ .Content }}
+    <!-- #region: Header and image -->
+    <h2>Watch the webinar</h2>
+    <div class="webinar-links-block">
+      <a class="webinar-link" href="https://www.youtube.com/watch?v=z6Psfopy55E">WEBINAR RECORDING</a>
+      <a class="webinar-link" href="//localhost:1313/presentations/CSAF_WEBINAR_DEC_2022.pdf">PRESENTATION SLIDES</a>
+    </div>
+    <!-- #endregion -->
+    <!-- #region: Header and image -->
+    <div class="d-flex justify-content-center">
+      <img src="/events/webinar/webinar-with-mouse-640x196.jpg" alt="CSAF Webinar">
+    </div>
+    <!-- #endregion -->
   </section>
 </main>
 {{ end }}
