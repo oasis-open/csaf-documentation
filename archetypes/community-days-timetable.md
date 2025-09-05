@@ -38,6 +38,10 @@ Event description.
 
 ### CSAF Community Day 1 (`November 12, {{ .Name }}`)
 
+`⚠️ Note: tables styling on small screens (tablets and mobile) is optimized
+for the current short headers. If longer table headers need to be used,
+the styling must be updated to avoid text overlapping.`
+
 | Time              | Session                                   | TLP               | Speaker              |
 | ----------------- | ----------------------------------------- | ----------------- | -------------------- |
 | 13:30 - 13:45 CET | {{< internal-link "Welcome & Keynote" >}} | {{< tlp-clear >}} | Justin Murphy (CISA) |
