@@ -9,7 +9,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: { { .Name } }
+    year: {{ .Name }}
   render:
     lists:
       display_in_lists: true
@@ -37,6 +37,10 @@ Event description.
 ## Program
 
 ### CSAF Community Day 1 (`November 12, {{ .Name }}`)
+
+`⚠️ Note: tables styling on small screens (tablets and mobile) is optimized
+for the current short headers. If longer table headers need to be used,
+the styling must be updated to avoid text overlapping.`
 
 | Time              | Session                                   | TLP               | Speaker              |
 | ----------------- | ----------------------------------------- | ----------------- | -------------------- |

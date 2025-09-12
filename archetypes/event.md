@@ -10,7 +10,7 @@ params:
     dates: ''
     location_long: ''
     location_short: ''
-    year: { { replace .Name "-" " " | title } }
+    year: {{ now.Year }}
   render:
     lists:
       display_in_lists: true

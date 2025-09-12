@@ -86,7 +86,12 @@
 
   {{ if $bottomEvents }}
     <section class="container">
-      <h2 class="mt-5 mb-4">Previous events</h2>
+      {{ if $topEvents }}
+        <h2 class="mt-5 mb-4">Previous events</h2>
+      {{ else }}
+        <h2 class="mt-5 mb-4">{{ .Title }}</h2>
+      {{ end }}
+
       {{ partial "pages/events/list-with-mini-cards.html" $bottomEvents }}
     </section>
   {{ end }}

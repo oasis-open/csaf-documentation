@@ -146,6 +146,19 @@ You can either start with a ready-to-use template or create a blank page.
     If you're replacing a Community Days CFP page with a Timetable page, delete
     the old file manually before running the command.
 
+  - **For correct lists sorting year parameter is required in front-matter.**
+    After creating a new page make sure that year value is correct
+    and is not surounded by apostrophes.
+
+    Example:
+
+    ```yaml
+    params:
+      event:
+        ...
+        year: 2025
+    ```
+
 - **Starting with an empty page:**
 
   ```
