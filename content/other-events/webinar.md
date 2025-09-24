@@ -10,7 +10,7 @@ params:
     location_long: 'Webinar Recording'
     location_short: 'Webinar Recording'
     year: 2022
-    dates: 'December 2022'
+    dates: 'December 1, 2022'
   render:
     lists:
       display_in_lists: true
