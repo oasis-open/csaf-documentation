@@ -11,7 +11,7 @@
     },
     {
         "label": "FAQ",
-        "url": "https://github.com/oasis-tcs/csaf/blob/master/csaf_2.0/guidance/faq.md",
-        "external": true
+        "url": "/faq/",
+        "external": false
     }
 ]
