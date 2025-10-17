@@ -1,5 +1,0 @@
-{{ $file := .Get 0 }}
-{{ $page := .Site.GetPage $file }}
-{{ if $page }}
-  {{ $page.Content }}
-{{ end }}

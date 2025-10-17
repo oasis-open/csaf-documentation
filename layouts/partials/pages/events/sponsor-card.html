@@ -1,0 +1,23 @@
+{{ $logo  := .logo | default "" }}
+
+<div class="sponsors align-self-end">
+  <a
+    class="d-flex flex-column"
+    href="{{ .website }}"
+    target="_blank"
+    title="{{ .name }} website"
+    style="align-items: center;"
+  >
+    {{ if $logo }}
+      <img
+        class="sponsors__logo sponsors__logo--{{ .priority }}"
+        src="{{ $logo }}"
+        alt="{{ .name }} logo"
+      >
+    {{ else }}
+      <div class="sponsors__replacement-text sponsors__replacement-text--{{ .priority }}">
+        {{ .name }}
+      </div>
+    {{ end }}
+  </a>
+</div>

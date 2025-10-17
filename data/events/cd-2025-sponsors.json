@@ -1,0 +1,60 @@
+[
+  {
+    "priority": 1,
+    "name": "Champion",
+    "sponsors": [
+      {
+        "name": "Huawei",
+        "logo": "/events/community-days/2025/sponsors/1_Huawei_logo.png",
+        "website": "https://www.huawei.com"
+      }
+    ]
+  },
+  {
+    "priority": 2,
+    "name": "Innovator",
+    "sponsors": [
+      {
+        "name": "Siemens",
+        "logo": "/events/community-days/2025/sponsors/2_Siemens_logo.png",
+        "website": "https://www.siemens.com"
+      }
+    ]
+  },
+  {
+    "priority": 3,
+    "name": "Community",
+    "sponsors": [
+      {
+        "name": "EACG (TrustSource)",
+        "logo": "/events/community-days/2025/sponsors/3_TrustSource-logo.png",
+        "website": "https://www.trustsource.io"
+      },
+      {
+        "name": "HIMA",
+        "logo": "/events/community-days/2025/sponsors/3_HIMA_logo.png",
+        "website": "https://www.hima.com"
+      },
+      {
+        "name": "Intevation",
+        "logo": "/events/community-days/2025/sponsors/3_Intevation_logo.svg",
+        "website": "https://www.intevation.de"
+      },
+      {
+        "name": "Ferrous Systems",
+        "logo": "/events/community-days/2025/sponsors/3_FerrousSystems_logo.svg",
+        "website": "https://ferrous-systems.com"
+      },
+      {
+        "name": "Murrelektronik",
+        "logo": "",
+        "website": "https://www.murrelektronik.com/de/"
+      },
+      {
+        "name": "Pilz",
+        "logo": "",
+        "website": "https://www.pilz.com"
+      }
+    ]
+  }
+]

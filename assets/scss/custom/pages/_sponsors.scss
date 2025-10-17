@@ -1,0 +1,78 @@
+.sponsors {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 30px;
+    padding-block: 24px;
+
+    p {
+      color: $gray-900 !important;
+      margin: 0;
+    }
+  }
+
+  &__header {
+    text-align: end;
+    margin-top: 0 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: lighten($secondary, 60%) !important;
+    margin-bottom: -48px !important;
+
+    @include media-breakpoint-between(md, lg) {
+      margin-bottom: -20px !important;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 30px !important;
+      margin-bottom: -14px !important;
+    }
+
+
+    &--1 {
+      font-size: calc(2.5rem + 1.9vw) !important;
+    }
+
+    &--2 {
+      font-size: calc(2.2rem + 1.35vw) !important;
+    }
+
+    &--3 {
+      font-size: calc(1.8rem + 1vw) !important;
+    }
+  }
+
+  &__replacement-text {
+    color: $secondary;
+
+    &--1 {
+      font-size: calc(1.4rem + 1.5vw);
+    }
+
+    &--2 {
+      font-size: calc(1.2rem + 1.15vw);
+    }
+
+    &--3 {
+      font-size: calc(0.9rem + 0.6vw);
+    }
+  }
+
+  &__logo {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+
+    &--1 {
+      max-height: 130px;
+    }
+
+    &--2 {
+      max-height: 85px;
+    }
+
+    &--3 {
+      max-height: 55px;
+    }
+  }
+}
