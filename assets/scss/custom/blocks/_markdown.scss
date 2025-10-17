@@ -33,7 +33,7 @@
   h2 {
     margin-top: 2.2rem;
     margin-bottom: 1rem;
-    font-size: calc(1.35rem + 1.2vw);
+    font-size: calc(1.25rem + 1vw);
 
     @include media-breakpoint-down(sm) {
       margin-top: 1.4rem;
@@ -49,7 +49,7 @@
   h3 {
     margin-top: 1.2rem;
     margin-bottom: 0.8rem;
-    font-size: calc(1rem + 0.75vw);
+    font-size: calc(1.2rem + 0.75vw);
 
     @include media-breakpoint-down(sm) {
       margin-top: 0.9rem;

@@ -1,0 +1,21 @@
+{{ $groups := site.Data }}
+{{ range (split .jsonPath ".") }}
+  {{ $groups = index $groups . }}
+{{ end }}
+
+<section class="sponsors">
+  <h2>Sponsors</h2>
+
+  {{ range $group := $groups }}
+    {{ if $group.sponsors }}
+      <h3 class="sponsors__header sponsors__header--{{ $group.priority }}">
+        {{ $group.name }}
+      </h3>
+      <div class="sponsors__row">
+        {{ range $sponsor := $group.sponsors }}
+          {{ partial "pages/events/sponsor-card.html" (merge $sponsor (dict "priority" $group.priority)) }}
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+</section>
