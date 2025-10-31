@@ -23,6 +23,11 @@
         "name": "Siemens",
         "logo": "/events/community-days/2025/sponsors/2_Siemens_logo.png",
         "website": "https://www.siemens.com"
+      },
+      {
+        "name": "Allianz für Cyber-Sicherheit",
+        "logo": "/events/community-days/2025/sponsors/2_ACS_logo.png",
+        "website": "https://www.allianz-fuer-cybersicherheit.de"
       }
     ]
   },
@@ -59,6 +64,16 @@
         "name": "Pilz",
         "logo": "/events/community-days/2025/sponsors/3_Pilz_logo.png",
         "website": "https://www.pilz.com"
+      },
+      {
+        "name": "BSI",
+        "logo": "/events/community-days/2025/sponsors/3_BSI_logo.png",
+        "website": "https://www.bsi.bund.de/EN/"
+      },
+      {
+        "name": "ENISA",
+        "logo": "/events/community-days/2025/sponsors/3_ENISA_logo.png",
+        "website": "https://www.enisa.europa.eu/"
       }
     ]
   }
