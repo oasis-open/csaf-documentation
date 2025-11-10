@@ -75,7 +75,7 @@ Clouditor is a tool for the continuous assurance of cloud and other backend serv
 {{% /card %}}
 
 {{% card %}}
-### [SecObserve](https://github.com/MaibornWolff/SecObserve)
+### [SecObserve](https://github.com/SecObserve/SecObserve)
 An open source vulnerability management system that can produce and consume CSAF VEX documents.
 {{% /card %}}
 
