@@ -1,6 +1,6 @@
 {
-  "visible": true,
+  "visible": false,
   "url": "/events/",
-  "text": "Register now for the upcoming events in Nuremburg, Germany: Workshops (Nov 10-12) and Community Days 2025 (Nov 13-14)",
+  "text": "CSAF Community Days 2025 - Slides available",
   "exclude": ["/events/", "/workshops/", "/community-days/"]
 }
