@@ -79,6 +79,18 @@
   h3 {
     margin: 0;
     padding-right: 6.2rem;
+
+    @include media-breakpoint-down(lg) {
+      scroll-margin-top: 98px;
+    }
+
+    @include media-breakpoint-between(lg, xxl) {
+      scroll-margin-top: 127px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      scroll-margin-top: 130px;
+    }
   }
 
   .tlp {
