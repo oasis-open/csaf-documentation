@@ -559,11 +559,11 @@ Albeit speculating here, there might have been some time pressure on the publish
 ```
 
 All of these examples can be downloaded as individual files at:
-* /cvrf_example_a.xml
-* /cvrf_example_b.xml
-* /cvrf_example_c.xml
-* /cvrf_example_d.xml
-* /cvrf_example_e.xml
+* [/cvrf_example_a.xml](/cvrf_example_a.xml)
+* [/cvrf_example_b.xml](/cvrf_example_b.xml)
+* [/cvrf_example_c.xml](/cvrf_example_c.xml)
+* [/cvrf_example_d.xml](/cvrf_example_d.xml)
+* [/cvrf_example_e.xml](/cvrf_example_e.xml)
 
 
 =======
@@ -1130,11 +1130,11 @@ Albeit speculating here, there might have been some time pressure on the publish
 ```
 
 All of these examples can be downloaded as individual files at:
-* /cvrf_example_a.xml
-* /cvrf_example_b.xml
-* /cvrf_example_c.xml
-* /cvrf_example_d.xml
-* /cvrf_example_e.xml
+* [/cvrf_example_a.xml](/cvrf_example_a.xml)
+* [/cvrf_example_b.xml](/cvrf_example_b.xml)
+* [/cvrf_example_c.xml](/cvrf_example_c.xml)
+* [/cvrf_example_d.xml](/cvrf_example_d.xml)
+* [/cvrf_example_e.xml](/cvrf_example_e.xml)
 <<<<<<< HEAD
 >>>>>>> 4870c424f6201dad6589c2968dc944aaa993fff5
 =======
