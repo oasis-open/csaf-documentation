@@ -7,6 +7,11 @@
         "name": "Huawei",
         "logo": "/events/community-days/2025/sponsors/1_Huawei_logo.png",
         "website": "https://www.huawei.com"
+      },
+      {
+        "name": "Microsoft",
+        "logo": "/events/community-days/2025/sponsors/1_Microsoft_logo.png",
+        "website": "https://www.microsoft.com"
       }
     ]
   },
@@ -18,6 +23,11 @@
         "name": "Siemens",
         "logo": "/events/community-days/2025/sponsors/2_Siemens_logo.png",
         "website": "https://www.siemens.com"
+      },
+      {
+        "name": "Allianz für Cyber-Sicherheit",
+        "logo": "/events/community-days/2025/sponsors/2_ACS_logo.png",
+        "website": "https://www.allianz-fuer-cybersicherheit.de"
       }
     ]
   },
@@ -27,7 +37,7 @@
     "sponsors": [
       {
         "name": "EACG (TrustSource)",
-        "logo": "/events/community-days/2025/sponsors/3_TrustSource-logo.png",
+        "logo": "/events/community-days/2025/sponsors/3_TrustSource_logo.png",
         "website": "https://www.trustsource.io"
       },
       {
@@ -47,13 +57,28 @@
       },
       {
         "name": "Murrelektronik",
-        "logo": "",
+        "logo": "/events/community-days/2025/sponsors/3_MurrElektronik_logo.png",
         "website": "https://www.murrelektronik.com/de/"
       },
       {
         "name": "Pilz",
-        "logo": "",
+        "logo": "/events/community-days/2025/sponsors/3_Pilz_logo.png",
         "website": "https://www.pilz.com"
+      },
+      {
+        "name": "BSI",
+        "logo": "/events/community-days/2025/sponsors/3_BSI_logo.png",
+        "website": "https://www.bsi.bund.de/EN/"
+      },
+      {
+        "name": "ENISA",
+        "logo": "/events/community-days/2025/sponsors/3_ENISA_logo.png",
+        "website": "https://www.enisa.europa.eu/"
+      },
+      {
+        "name": "Trend Micro",
+        "logo": "/events/community-days/2025/sponsors/3_Trend_Micro_logo.jpg",
+        "website": "https://trendmicro.com/"
       }
     ]
   }
