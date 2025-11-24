@@ -4,7 +4,7 @@
 <div>
 <h2><a id="openParticipation">Public Participation Invited</a></h2>
 
-<p>This <a href="https://www.oasis-open.org/resources/open-repositories">OASIS TC Open Repository</a> ( <b><a href="https://github.com/oasis-open/csaf-documentation">github.com/oasis-open/csaf-documentation</a></b> ) is a community public repository that supports participation by anyone, whether affiliated with OASIS or not.  Substantive contributions (repository "code") and related feedback is invited from all parties, following the common conventions for participation in GitHub public repository projects.  Participation is expected to be consistent with the <a href="https://www.oasis-open.org/policies-guidelines/open-repositories">OASIS TC Open Repository Guidelines and Procedures</a>, the <a href="https://opensource.org/license/BSD-3-Clause">LICENSE</a> designated for this particular repository (BSD-3-Clause License), and the requirement for an <a href="https://cla-assistant.io/oasis-open/Open-Repo-admin">Individual Contributor License Agreement</a>.  Please see the repository <a href="https://github.com/oasis-open/csaf-documentation/blob/master/README.md">README</a> document for other details.</p>
+<p>This <a href="https://www.oasis-open.org/resources/open-repositories">OASIS TC Open Repository</a> ( <b><a href="https://github.com/oasis-open/csaf-documentation">github.com/oasis-open/csaf-documentation</a></b> ) is a community public repository that supports participation by anyone, whether affiliated with OASIS or not.  Substantive contributions (repository "code") and related feedback is invited from all parties, following the common conventions for participation in GitHub public repository projects.  Participation is expected to be consistent with the <a href="https://www.oasis-open.org/policies-guidelines/open-repositories">OASIS TC Open Repository Guidelines and Procedures</a>, the <a href="https://opensource.org/license/BSD-3-Clause">LICENSE</a> designated for this particular repository (BSD-3-Clause License), and the requirement for an <a href="https://cla-assistant.io/oasis-open/Open-Repo-admin">Individual Contributor License Agreement</a>.  Please see the repository <a href="/README.md">README</a> document for other details.</p>
 </div>
 
 
@@ -15,7 +15,7 @@
 
 <div>
 <h2><a id="distinctLicenses">Licensing Distinct from OASIS IPR Policy</a></h2>
-<p>Because different licenses apply to the OASIS TC's specification work, and this TC Open Repository, there is no guarantee that the licensure of specific repository material will be compatible with licensing requirements of an implementation of a TC's specification.  Please refer to the <a href="https://github.com/oasis-open/csaf-documentation/blob/master/LICENSE">LICENSE file</a> for the terms of this material, and to the OASIS IPR Policy for <a href="https://www.oasis-open.org/policies-guidelines/ipr#Non-Assertion-Mode">the terms applicable to the TC's specifications</a>, including any applicable <a href="https://www.oasis-open.org/committees/csaf/ipr.php">declarations</a>.</p>
+<p>Because different licenses apply to the OASIS TC's specification work, and this TC Open Repository, there is no guarantee that the licensure of specific repository material will be compatible with licensing requirements of an implementation of a TC's specification.  Please refer to the <a href="/LICENSE">LICENSE file</a> for the terms of this material, and to the OASIS IPR Policy for <a href="https://www.oasis-open.org/policies-guidelines/ipr#Non-Assertion-Mode">the terms applicable to the TC's specifications</a>, including any applicable <a href="https://www.oasis-open.org/committees/csaf/ipr.php">declarations</a>.</p>
 </div>
 
 <div>
@@ -37,6 +37,6 @@
 <div>
 <h2><a id="feedback">Feedback</a></h2>
 
-<p>Questions or comments about this TC Open Repository's activities should be composed as GitHub issues or comments. If use of an issue/comment is not possible or appropriate, questions may be directed by email to the <a href="https://github.com/oasis-open/csaf-documentation/blob/master/README.md#maintainers">repository Maintainer(s)</a>.  Please send general questions about TC Open Repository participation to OASIS Staff at <a href="mailto:repository-admin@oasis-open.org">repository-admin@oasis-open.org</a> and any specific CLA-related questions to <a href="mailto:repository-cla@oasis-open.org">repository-cla@oasis-open.org</a>.</p>
+<p>Questions or comments about this TC Open Repository's activities should be composed as GitHub issues or comments. If use of an issue/comment is not possible or appropriate, questions may be directed by email to the <a href="/README.md#maintainers">repository Maintainer(s)</a>.  Please send general questions about TC Open Repository participation to OASIS Staff at <a href="mailto:repository-admin@oasis-open.org">repository-admin@oasis-open.org</a> and any specific CLA-related questions to <a href="mailto:repository-cla@oasis-open.org">repository-cla@oasis-open.org</a>.</p>
 
 </div></div>
