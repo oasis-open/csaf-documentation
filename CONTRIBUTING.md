@@ -2,7 +2,7 @@
 
 ## Public Participation Invited
 
-This [OASIS TC Open Repository](https://www.oasis-open.org/resources/open-repositories) ( **[github.com/oasis-open/csaf-documentation](https://github.com/oasis-open/csaf-documentation)** ) is a community public repository that supports participation by anyone, whether affiliated with OASIS or not. Substantive contributions (repository "code") and related feedback is invited from all parties, following the common conventions for participation in GitHub public repository projects. Participation is expected to be consistent with the [OASIS TC Open Repository Guidelines and Procedures](https://www.oasis-open.org/policies-guidelines/open-repositories), the [LICENSE](https://opensource.org/license/BSD-3-Clause) designated for this particular repository (BSD-3-Clause License), and the requirement for an [Individual Contributor License Agreement](https://cla-assistant.io/oasis-open/Open-Repo-admin). Please see the repository [README](/README.md) document for other details.
+This [OASIS TC Open Repository](https://www.oasis-open.org/resources/open-repositories) ( **[github.com/oasis-open/csaf-documentation](https://github.com/oasis-open/csaf-documentation)** ) is a community public repository that supports participation by anyone, whether affiliated with OASIS or not. Substantive contributions (repository "code") and related feedback is invited from all parties, following the common conventions for participation in GitHub public repository projects. Participation is expected to be consistent with the [OASIS TC Open Repository Guidelines and Procedures](https://www.oasis-open.org/policies-guidelines/open-repositories), the [LICENSE](LICENSES/BSD-3-Clause.txt) designated for this particular repository (BSD-3-Clause License), and the requirement for an [Individual Contributor License Agreement](https://cla-assistant.io/oasis-open/Open-Repo-admin). Please see the repository [README](/README.md) document for other details.
 
 ## Governance Distinct from OASIS TC Process
 
@@ -10,7 +10,7 @@ Content accepted as "contributions" to this TC Open Repository, as [defined](#co
 
 ## Licensing Distinct from OASIS IPR Policy
 
-Because different licenses apply to the OASIS TC's specification work, and this TC Open Repository, there is no guarantee that the licensure of specific repository material will be compatible with licensing requirements of an implementation of a TC's specification. Please refer to the [LICENSE file](/LICENSE) for the terms of this material, and to the OASIS IPR Policy for [the terms applicable to the TC's specifications](https://www.oasis-open.org/policies-guidelines/ipr#Non-Assertion-Mode), including any applicable [declarations](https://www.oasis-open.org/committees/csaf/ipr.php).
+Because different licenses apply to the OASIS TC's specification work, and this TC Open Repository, there is no guarantee that the licensure of specific repository material will be compatible with licensing requirements of an implementation of a TC's specification. Please refer to the [LICENSE.md](/LICENSE.md) for the terms of this material, and to the OASIS IPR Policy for [the terms applicable to the TC's specifications](https://www.oasis-open.org/policies-guidelines/ipr#Non-Assertion-Mode), including any applicable [declarations](https://www.oasis-open.org/committees/csaf/ipr.php).
 
 ## Contributions Subject to Individual CLA
 
