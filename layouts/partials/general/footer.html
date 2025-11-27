@@ -1,6 +1,8 @@
+{{ $currentPage := .RelPermalink | relURL }}
+
 <footer class="footer mt-auto bg-light py-3 py-lg-4">
-  <div class="container d-flex flex-row py-2 mb-4" style="gap: 96px;">
-    <div class="ms-4">
+  <div class="footer-content container d-flex flex-row py-2 mb-4">
+    <div>
       <h4 style="color: #363c40;">Contribute</h4>
       <div class="small">
         <a
@@ -9,12 +11,19 @@
         >
           To this website
         </a>
-        <a
-          class="d-block"
-          href="/specification/"
-        >
-          To CSAF Specification
-        </a>
+
+        {{ if eq "/specification/" $currentPage }}
+          <div class="footer-link">
+            To CSAF Specification
+          </div>
+        {{ else }}
+          <a
+            class="d-block"
+            href="/specification/"
+          >
+            To CSAF Specification
+          </a>
+        {{ end }}
       </div>
     </div>
 
@@ -41,7 +50,7 @@
     </div>
   </div>
 
-  <div class="container text-center" style="color: 363c40;">
+  <div class="container text-center" style="color: #363c40;">
     © Copyright 2025 OASIS CSAF TC - All Rights Reserved
   </div>
 </footer>
