@@ -360,7 +360,7 @@ The vulnerability is due to improper handling of the Content-Type header value w
       <Remediation Type="Workaround">
         <Description>Any workarounds, when available, are documented in the Cisco bugs, which are accessible through the Cisco Bug Search Tool ["https://bst.cloudapps.cisco.com/bugsearch/bug/BUGID"].</Description>
       </Remediation>
-    /Remediations>
+    </Remediations>
 
     <References>
       <Reference Type="Self">
