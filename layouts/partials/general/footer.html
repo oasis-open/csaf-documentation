@@ -1,5 +1,56 @@
+{{ $currentPage := .RelPermalink | relURL }}
+
 <footer class="footer mt-auto bg-light py-3 py-lg-4">
-  <div class="container text-center">
+  <div class="footer-content container d-flex flex-row py-2 mb-4">
+    <div>
+      <h4 style="color: #363c40;">Contribute</h4>
+      <div class="small">
+        <a
+          class="d-block"
+          href="https://github.com/oasis-open/csaf-documentation/blob/master/CONTRIBUTING.md#fork-and-pull-collaboration-model"
+        >
+          To this website
+        </a>
+
+        {{ if eq "/specification/" $currentPage }}
+          <div class="footer-link">
+            To CSAF Specification
+          </div>
+        {{ else }}
+          <a
+            class="d-block"
+            href="/specification/"
+          >
+            To CSAF Specification
+          </a>
+        {{ end }}
+      </div>
+    </div>
+
+    <div>
+      <h4 style="color: #363c40;">Mailing lists</h4>
+      <div class="small">
+        <a
+          href="https://groups.oasis-open.org/communities/community-home/digestviewer?communitykey=a9ed8d9b-d946-45d8-9ea1-0190504fc6f2"
+        >csaf-announcements</a>
+        <a
+          href="https://groups.oasis-open.org/communities/community-home?communitykey=a9ed8d9b-d946-45d8-9ea1-0190504fc6f2"
+        >(subscribe)</a>
+
+        <div class=d.block>
+          <a
+            href="https://groups.oasis-open.org/communities/community-home/digestviewer?communitykey=3720cda2-3056-4183-a759-018f5aa7b5f2"
+          >csaf-comment</a>
+          <a
+            href="https://groups.oasis-open.org/communities/community-home?CommunityKey=3720cda2-3056-4183-a759-018f5aa7b5f2"
+          >(subscribe)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center" style="color: #363c40;">
     © Copyright 2025 OASIS CSAF TC - All Rights Reserved
   </div>
 </footer>

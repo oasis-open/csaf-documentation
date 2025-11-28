@@ -1,0 +1,18 @@
+.footer-content {
+  @include media-breakpoint-up(md) {
+    gap: 96px !important;
+  }
+
+  @include media-breakpoint-between(sm, lg) {
+    justify-content: space-around !important;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+}
+
+.footer-link {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+}
