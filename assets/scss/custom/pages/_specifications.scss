@@ -6,7 +6,7 @@
 
     @include media-breakpoint-up(lg)  {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 330px 1fr;
       grid-template-rows: auto auto;
       gap: 2rem;
       align-items: start;
@@ -23,6 +23,7 @@
   &__buttons {
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
     gap: 20px;
 
     @include media-breakpoint-up(lg)  {
