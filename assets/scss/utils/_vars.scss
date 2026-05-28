@@ -8,9 +8,10 @@ $font-family-base: 'Darker Grotesque', Arial, Helvetica, sans-serif;
 $font-weight-normal: 400;
 $font-weight-bold: 500;
 
-$h1-font-size: 7rem;
-$h2-font-size: 4.5rem;
-$h3-font-size: 2.75rem;
+$h1-font-size: clamp(5rem, calc(3.8rem + 2vw), 7rem);
+$h2-font-size: clamp(3.5rem, calc(2.8rem + 1.5vw), 5rem);
+$h3-font-size: clamp(2.2rem, calc(2rem + 0.8vw), 2.75rem);
+$h4-font-size: clamp(1.6rem, calc(1.4rem + 0.4vw), 2rem);
 $font-size-base: 1.5rem;
 
 $transition-slow: all 0.35s ease-in-out;
