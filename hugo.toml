@@ -1,4 +1,4 @@
-languageCode = 'en-US'
+locale = 'en-US'
 title = 'CSAF'
 disableKinds = ["taxonomy", "RSS", "sitemap"]
 ignoreFiles = [".license$"]
