@@ -173,7 +173,7 @@ and you get the site files in `public/`.
 
 The `hugo.toml` file contains the main configuration settings for the Hugo project.
 
-- **languageCode**: Defines the default language for the website
+- **locale**: Defines the default language for the website
   (set to American English).
 
 - **title**: The title of the website.

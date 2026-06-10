@@ -1,4 +1,4 @@
-{{ $highlight := .Site.Data.navbarHighlightedLink }}
+{{ $highlight := hugo.Data.navbarHighlightedLink }}
 {{ $current := .RelPermalink }}
 
 {{ $hasVisibleContent := and ($highlight.visible) ($highlight.url) ($highlight.text) }}

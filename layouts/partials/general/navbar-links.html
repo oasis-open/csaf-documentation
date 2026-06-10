@@ -1,9 +1,9 @@
 <ul class="navbar-nav">
-  {{ range .Site.Data.navlinksInternal }}
+  {{ range hugo.Data.navlinksInternal }}
     {{ partial "general/navbar-link.html" (dict "link" . "page" $.Page) }}
   {{ end }}
   <li class="navbar-nav__separator"></li>
-  {{ range .Site.Data.navlinksExternal }}
+  {{ range hugo.Data.navlinksExternal }}
     {{ partial "general/navbar-link.html" (dict "link" .) }}
   {{ end }}
   <li>

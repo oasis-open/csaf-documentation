@@ -1,4 +1,4 @@
-{{ $groups := site.Data }}
+{{ $groups := hugo.Data }}
 {{ range (split .jsonPath ".") }}
   {{ $groups = index $groups . }}
 {{ end }}
