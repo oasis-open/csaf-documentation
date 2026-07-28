@@ -111,5 +111,5 @@ An integration for the popular dependency management system DependencyTrack.
 
 {{% card %}}
 ### [CSAF Provider Online Check](https://check.provider.csaf.dev/)
-A website which provides easy access to CSAF Checker and Validation tools.
+A website which provides easy access to the CSAF Provider Checker.
 {{% /card %}}
