@@ -1,0 +1,31 @@
+[
+  {
+    "priority": 1,
+    "name": "Champion",
+    "sponsors": [
+    ]
+  },
+  {
+    "priority": 2,
+    "name": "Innovator",
+    "sponsors": [
+      {
+        "name": "Microsoft",
+        "logo": "/events/community-days/2026/sponsors/2_Microsoft_logo.png",
+        "website": "https://www.microsoft.com"
+      },
+      {
+        "name": "Zentric UB GmbH",
+        "logo": "/events/community-days/2026/sponsors/2_Zentric_logo.jpeg",
+        "website": "https://www.zentric.ch/index_en.html"
+      }
+    ]
+  },
+  {
+    "priority": 3,
+    "name": "Community",
+    "sponsors": [
+
+    ]
+  }
+]
