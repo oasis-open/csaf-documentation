@@ -1,0 +1,9 @@
+<!-- Do not mess with whitespace... apparently in hugo it is of utmost importance! -->
+<div class="pb-4 pt-4">
+  <span class="source-icon">
+    {{ with resources.Get "icons/source.svg" }}
+    {{- .Content | safeHTML }}
+    {{- end -}}
+  </span>
+  <a href="{{ .Get 0 }}">{{ .Get 0 | replaceRE "^https://" ""}}</a>
+</div>

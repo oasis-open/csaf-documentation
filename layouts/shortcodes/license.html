@@ -1,0 +1,11 @@
+<!-- Do not mess with whitespace... apparently in hugo it is of utmost importance! -->
+<div class="pt-4">
+  <div class="position-absolute pb-3 small text-muted" style="bottom: 0;">
+    <span class="license-icon">
+    {{ with resources.Get "icons/license.svg" }}
+    {{- .Content | safeHTML }}
+    {{- end -}}
+    </span>
+    {{ .Get 0 | markdownify }}
+  </div>
+</div>
