@@ -25,7 +25,11 @@
     "priority": 3,
     "name": "Community",
     "sponsors": [
-
+      {
+        "name": "ifm",
+        "logo": "/events/community-days/2026/sponsors/3_ifm_logo.png",
+        "website": "https://www.ifm.com/"
+      }
     ]
   }
 ]
