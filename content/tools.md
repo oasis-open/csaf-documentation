@@ -46,6 +46,13 @@ A website guiding you through the creation of CSAF documents. Allows editing of 
 {{% license Apache-2.0 %}}
 {{% /card %}}
 
+{{% card %}}
+### [CSAF CVE Description Comparison](https://csaf-tools.github.io/cve-description-comparison/)
+Compare CVE descriptions of CSAF documents with CVE databases.
+{{% source "https://github.com/csaf-tools/cve-description-comparison/" %}}
+{{% license Apache-2.0 %}}
+{{% /card %}}
+
 ## Tools
 
 {{% card %}}
@@ -159,5 +166,17 @@ An integration for the popular dependency management system DependencyTrack.
 {{% card %}}
 ### [ISDuBA](https://github.com/ISDuBA/ISDuBA/blob/main/README.md)
 A web application for downloading and evaluating security advisories.
+{{% license Apache-2.0 %}}
+{{% /card %}}
+
+{{% card %}}
+### [CSAF Modifier](https://github.com/csaf-tools/modifier)
+Command line tool to modify properties of CSAF documents.
+{{% license Apache-2.0 %}}
+{{% /card %}}
+
+{{% card %}}
+### [GitHub CSAF Advisory Action](https://github.com/csaf-tools/csaf-action)
+Publish CSAF Documents from repositories to GitHub Pages.
 {{% license Apache-2.0 %}}
 {{% /card %}}
