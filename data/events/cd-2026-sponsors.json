@@ -42,8 +42,13 @@
       },
       {
         "name": "Intevation",
-        "logo": "/events/community-days/2025/sponsors/3_Intevation_logo.svg",
+        "logo": "/events/community-days/2026/sponsors/3_Intevation_logo.svg",
         "website": "https://www.intevation.de"
+      },
+      {
+        "name": "Phoenix Contact",
+        "logo": "/events/community-days/2026/sponsors/3_PhoenixContact_logo.png",
+        "website": "https://www.phoenixcontact.com/de-de/"
       }
     ]
   }
