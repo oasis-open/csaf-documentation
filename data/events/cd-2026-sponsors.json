@@ -23,6 +23,11 @@
         "name": "Festo SE",
         "logo": "/events/community-days/2026/sponsors/2_Festo_logo.png",
         "website": "https://www.festo.com/"
+      },
+      {
+        "name": "eXXcellent solutions",
+        "logo": "/events/community-days/2026/sponsors/2_eXXcellent_logo.png",
+        "website": "https://www.exxcellent.de"
       }
     ]
   },
@@ -37,13 +42,13 @@
       },
       {
         "name": "Intevation",
-        "logo": "/events/community-days/2025/sponsors/3_Intevation_logo.svg",
+        "logo": "/events/community-days/2026/sponsors/3_Intevation_logo.svg",
         "website": "https://www.intevation.de"
       },
       {
-        "name": "ENISA",
-        "logo": "/events/community-days/2025/sponsors/3_ENISA_logo.png",
-        "website": "https://www.enisa.europa.eu/"
+        "name": "Phoenix Contact",
+        "logo": "/events/community-days/2026/sponsors/3_PhoenixContact_logo.png",
+        "website": "https://www.phoenixcontact.com/de-de/"
       }
     ]
   }
