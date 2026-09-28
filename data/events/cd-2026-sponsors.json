@@ -25,6 +25,11 @@
         "website": "https://www.festo.com/"
       },
       {
+        "name": "Xitaso",
+        "logo": "/events/community-days/2026/sponsors/2_Xitaso_logo.png",
+        "website": "https://xitaso.com/"
+      },
+      {
         "name": "eXXcellent solutions",
         "logo": "/events/community-days/2026/sponsors/2_eXXcellent_logo.png",
         "website": "https://www.exxcellent.de"
@@ -48,7 +53,7 @@
       {
         "name": "Phoenix Contact",
         "logo": "/events/community-days/2026/sponsors/3_PhoenixContact_logo.png",
-        "website": "https://www.phoenixcontact.com/de-de/"
+        "website": "https://www.phoenixcontact.com/"
       }
     ]
   }
