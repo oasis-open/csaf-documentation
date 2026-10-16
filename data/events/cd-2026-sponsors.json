@@ -31,7 +31,7 @@
       },
       {
         "name": "eXXcellent solutions",
-        "logo": "/events/community-days/2026/sponsors/2_eXXcellent_logo.png",
+        "logo": "/events/community-days/2026/sponsors/2_eXXcellentSolutions_logo.png",
         "website": "https://www.exxcellent.de"
       }
     ]
@@ -53,6 +53,11 @@
       {
         "name": "Phoenix Contact",
         "logo": "/events/community-days/2026/sponsors/3_PhoenixContact_logo.png",
+        "website": "https://www.phoenixcontact.com/"
+      },
+      {
+        "name": "SMA",
+        "logo": "/events/community-days/2026/sponsors/3_sma_logo.png",
         "website": "https://www.phoenixcontact.com/"
       }
     ]
