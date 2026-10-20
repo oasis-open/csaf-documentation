@@ -58,7 +58,12 @@
       {
         "name": "SMA",
         "logo": "/events/community-days/2026/sponsors/3_sma_logo.png",
-        "website": "https://www.phoenixcontact.com/"
+        "website": "https://www.sma.de/"
+      },
+      {
+        "name": "enisa",
+        "logo": "/events/community-days/2026/sponsors/3_enisa_logo.png",
+        "website": "https://www.enisa.europa.eu"
       }
     ]
   }
