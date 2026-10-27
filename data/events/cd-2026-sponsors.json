@@ -33,6 +33,11 @@
         "name": "eXXcellent solutions",
         "logo": "/events/community-days/2026/sponsors/2_eXXcellentSolutions_logo.png",
         "website": "https://www.exxcellent.de"
+      },
+      {
+        "name": "Allianz für Cyber-Sicherheit",
+        "logo": "/events/community-days/2026/sponsors/2_ACS_logo.png",
+        "website": "https://www.allianz-fuer-cybersicherheit.de"
       }
     ]
   },
@@ -64,6 +69,11 @@
         "name": "ENISA",
         "logo": "/events/community-days/2026/sponsors/3_Enisa_logo.png",
         "website": "https://www.enisa.europa.eu"
+      },
+      {
+        "name": "BSI",
+        "logo": "/events/community-days/2026/sponsors/3_BSI_logo.png",
+        "website": "https://www.bsi.bund.de/EN/"
       }
     ]
   }
