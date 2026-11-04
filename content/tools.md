@@ -183,5 +183,6 @@ Publish CSAF Documents from repositories to GitHub Pages.
 
 {{% card %}}
 ### [@secvisogram/cli](https://github.com/secvisogram/cli)
-A command-line interface for rendering CSAF documents (2.0 and 2.1) to HTML.<br>
+A command-line interface for rendering CSAF documents (2.0 and 2.1) to HTML.
+{{% license Apache-2.0 %}}
 {{% /card %}}
