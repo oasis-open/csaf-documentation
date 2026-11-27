@@ -111,8 +111,8 @@ The CSAF Content Management System (CMS) Secvisogram backend code and documentat
 {{% /card %}}
 
 {{% card %}}
-### [paikalta](https://pypi.org/project/paikalta/)
-A tool for testing a CSAF Trusted Provider according to [Pypi](https://pypi.org/project/paikalta/).
+### [csaf](https://pypi.org/project/csaf/)
+Common Security Advisory Framework (CSAF) made actionable: Converting, creating, distributing, editing, indexing, measuring, mocking, querying, rendering, signing, updating, validating, and viewing CSAF documents through a Python API, a CLI, an LSP server, an MCP server, and a TUI.
 {{% license MIT %}}
 {{% /card %}}
 
